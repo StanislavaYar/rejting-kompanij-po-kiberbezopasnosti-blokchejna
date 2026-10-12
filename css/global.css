@@ -394,15 +394,15 @@ a.meta-chip:hover { border-color: var(--color-primary); color: var(--color-prima
 }
 .company__type { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
 .company__top { display: grid; gap: var(--space-md); margin-top: var(--space-lg); }
-@media (min-width: 900px) { .company__top { grid-template-columns: minmax(0, 1fr) 280px; align-items: stretch; } }
-.company__shot { margin: 0; display: flex; }
-.company__shot .browser { flex: 1; display: flex; flex-direction: column; }
-@media (min-width: 900px) { .company__shot .browser img { flex: 1 1 0; height: 0; min-height: 100%; aspect-ratio: auto; } }
+@media (min-width: 900px) { .company__top { grid-template-columns: minmax(0, 1fr) 260px; align-items: stretch; } }
+.company__shot { margin: 0; align-self: start; }
+.scorecard { display: flex; flex-direction: column; }
+.scorecard .scores { flex: 1; align-content: space-between; }
 .browser { border: 1px solid var(--color-border); border-radius: var(--radius-control); overflow: hidden; background: var(--color-bg); }
 .browser__bar { display: flex; align-items: center; gap: 5px; padding: 6px 10px; border-bottom: 1px solid var(--color-border); background: var(--color-surface-2); }
 .browser__bar i { width: 7px; height: 7px; border-radius: 50%; background: var(--color-border); }
 .browser__bar span { margin-left: 6px; font: 400 11px/14px var(--font-mono); color: var(--color-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.browser img { width: 100%; aspect-ratio: 1200 / 622; object-fit: cover; object-position: top center; background: var(--color-surface-2); }
+.browser img { width: 100%; height: auto; background: var(--color-surface-2); }
 .company__about { margin-top: var(--space-md); padding: var(--space-md) var(--space-lg); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-control); font-size: 15px; line-height: 24px; color: var(--color-text); }
 .company__panels { display: grid; gap: var(--space-md); margin-top: var(--space-md); }
 @media (min-width: 900px) { .company__panels { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
@@ -633,3 +633,9 @@ html { overflow-x: hidden; }
 .site-footer .site-logo:hover { opacity: 1; }
 .site-footer .site-logo__name { line-height: 1.4; }
 .site-footer .site-logo:hover .site-logo__name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+/* Компактный блок баллов: по высоте подстраивается под скриншот, скриншот не обрезается */
+@media (min-width: 900px) {
+  .company__top .scorecard { padding: 12px 14px; }
+  .company__top .scorecard__total { padding-bottom: 6px; margin-bottom: 8px; }
+  .company__top .scores { gap: 5px; }
+}

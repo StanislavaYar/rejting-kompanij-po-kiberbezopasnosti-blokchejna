@@ -25,6 +25,15 @@ function Bar($v, $w, $extra) {
   $wStr = $p.ToString([Globalization.CultureInfo]::InvariantCulture)
   "<span class=`"bar$extra`" aria-hidden=`"true`"><span$cls style=`"width:$wStr%`"></span></span>"
 }
+# Размеры webp (VP8, VP8L, VP8X) - чтобы width/height у <img> совпадали с файлом
+function WebpSize($path) {
+  $b = [IO.File]::ReadAllBytes($path)
+  $t = [Text.Encoding]::ASCII.GetString($b, 12, 4)
+  if ($t -eq 'VP8X') { return @((1 + $b[24] + 256 * $b[25] + 65536 * $b[26]), (1 + $b[27] + 256 * $b[28] + 65536 * $b[29])) }
+  if ($t -eq 'VP8 ') { return @((($b[26] + 256 * $b[27]) -band 0x3FFF), (($b[28] + 256 * $b[29]) -band 0x3FFF)) }
+  if ($t -eq 'VP8L') { $v = [BitConverter]::ToUInt32($b, 21); return @((($v -band 0x3FFF) + 1), ((($v -shr 14) -band 0x3FFF) + 1)) }
+  throw "Неизвестный формат webp: $path"
+}
 function Write-Utf8($rel, $text) {
   [IO.File]::WriteAllText((Join-Path $root $rel), ($text -replace "`r`n", "`n"), $utf8)
   Write-Host "wrote $rel"
@@ -75,8 +84,9 @@ foreach ($c in $companies) {
   [void]$sb.AppendLine('    </div>')
   [void]$sb.AppendLine('  </div>')
   [void]$sb.AppendLine('  <div class="company__top">')
+  $sz = WebpSize (Join-Path $root "images/companies/$($c.slug).webp")
   [void]$sb.AppendLine('    <figure class="company__shot">')
-  [void]$sb.AppendLine("      <div class=`"browser`"><div class=`"browser__bar`" aria-hidden=`"true`"><i></i><i></i><i></i><span>$(Enc $c.site_label)</span></div><img src=`"{{ROOT}}images/companies/$($c.slug).webp`" width=`"1200`" height=`"622`" loading=`"$lazy`" decoding=`"async`" alt=`"Главная страница сайта $(Enc $c.name)`"></div>")
+  [void]$sb.AppendLine("      <div class=`"browser`"><div class=`"browser__bar`" aria-hidden=`"true`"><i></i><i></i><i></i><span>$(Enc $c.site_label)</span></div><img src=`"{{ROOT}}images/companies/$($c.slug).webp`" width=`"$($sz[0])`" height=`"$($sz[1])`" loading=`"$lazy`" decoding=`"async`" alt=`"Главная страница сайта $(Enc $c.name)`"></div>")
   [void]$sb.AppendLine('    </figure>')
   [void]$sb.AppendLine("    <div class=`"scorecard`" aria-label=`"Баллы $(Enc $c.name) по 7 критериям`">")
   [void]$sb.AppendLine("      <p class=`"scorecard__total`"><span>Баллы</span><b>$(Num $c.total) <small>из 100</small></b></p>")
