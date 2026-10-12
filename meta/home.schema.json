@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "{{DOMAIN}}/#article",
+      "headline": "Рейтинг компаний по кибербезопасности блокчейна 2026",
+      "description": "Топ-10 компаний по кибербезопасности блокчейна в России и СНГ: пентест, аудит смарт-контрактов, крипто-форензика. 7 критериев, открытая методология.",
+      "inLanguage": "ru",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": "{{DOMAIN}}/",
+      "image": "{{DOMAIN}}/images/og-image.png",
+      "author": { "@id": "{{DOMAIN}}/#organization" },
+      "publisher": { "@id": "{{DOMAIN}}/#organization" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "{{DOMAIN}}/#rating",
+      "name": "Рейтинг компаний по кибербезопасности блокчейна: топ-10 в России и СНГ",
+      "numberOfItems": 10,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Paranoid Security", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-1" },
+        { "@type": "ListItem", "position": 2, "name": "Positive Technologies", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-2" },
+        { "@type": "ListItem", "position": 3, "name": "F6", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-3" },
+        { "@type": "ListItem", "position": 4, "name": "Лаборатория Касперского", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-4" },
+        { "@type": "ListItem", "position": 5, "name": "BI.ZONE", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-5" },
+        { "@type": "ListItem", "position": 6, "name": "AML Crypto", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-6" },
+        { "@type": "ListItem", "position": 7, "name": "MixBytes", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-7" },
+        { "@type": "ListItem", "position": 8, "name": "ШАРД", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-8" },
+        { "@type": "ListItem", "position": 9, "name": "BitOK", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-9" },
+        { "@type": "ListItem", "position": 10, "name": "КоинКит", "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#company-10" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{DOMAIN}}/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Как выбрать компанию по кибербезопасности блокчейна?", "acceptedAnswer": { "@type": "Answer", "text": "Компанию выбирают по задаче: пентест для инфраструктуры, аудит для смарт-контрактов, крипто-форензика для расследования краж. Проверьте опубликованные исследования подрядчика, состав отчета и то, кто лично ведет проект." } },
+        { "@type": "Question", "name": "Чем аудит смарт-контрактов отличается от пентеста?", "acceptedAnswer": { "@type": "Answer", "text": "Аудит смарт-контрактов проверяет код контрактов в блокчейне. Пентест проверяет серверы, приложения, сеть и процессы компании через моделирование атаки. Бирже обычно нужны обе проверки." } },
+        { "@type": "Question", "name": "Безопасен ли блокчейн сам по себе?", "acceptedAnswer": { "@type": "Answer", "text": "Блокчейн защищает записи от изменения за счет хеш-цепочки и консенсуса. Большинство краж происходит через ключи, смарт-контракты и инфраструктуру бирж: Bybit потеряла около 1,5 млрд долларов в 2025 году без взлома самого Ethereum." } },
+        { "@type": "Question", "name": "Что такое атака 51%?", "acceptedAnswer": { "@type": "Answer", "text": "Атака 51% - это захват больше половины вычислительной мощности или доли сети, который позволяет переписывать транзакции. Атака опасна для небольших сетей и практически нереальна для Bitcoin из-за стоимости оборудования." } },
+        { "@type": "Question", "name": "Какие принципы информационной безопасности обеспечивает блокчейн?", "acceptedAnswer": { "@type": "Answer", "text": "Блокчейн обеспечивает 2 из 3 принципов информационной безопасности: целостность и доступность. Конфиденциальность в публичных сетях требует дополнительного шифрования или приватных сетей." } },
+        { "@type": "Question", "name": "Можно ли вернуть украденную криптовалюту в России?", "acceptedAnswer": { "@type": "Answer", "text": "Вернуть криптовалюту можно, если средства дошли до биржи или сервиса, который способен их заморозить. Трассировку нужно начинать в первые часы после кражи, параллельно с заявлением в полицию." } },
+        { "@type": "Question", "name": "Может ли следствие в России арестовать криптовалюту?", "acceptedAnswer": { "@type": "Answer", "text": "Да, с 3 марта 2026 года действует закон № 38-ФЗ. Закон ввел статью 164.2 УПК об изъятии цифровой валюты с участием специалиста и порядок ареста криптовалюты." } },
+        { "@type": "Question", "name": "Сколько длится проверка безопасности блокчейн-проекта?", "acceptedAnswer": { "@type": "Answer", "text": "Пентест внешнего периметра длится около 1 месяца, внутреннего 1-2 месяца, Red Teaming около 8 месяцев (данные Paranoid Security). Срок аудита смарт-контрактов зависит от объема кода." } },
+        { "@type": "Question", "name": "Как компания может попасть в рейтинг?", "acceptedAnswer": { "@type": "Answer", "text": "Компания подает заявку на странице \"Добавить компанию\". Редакция оценивает ее по тем же 7 критериям и включает в рейтинг при пересмотре, который проходит 1 раз в квартал." } }
+      ]
+    }
+  ]
+}

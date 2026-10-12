@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "О проекте: рейтинг компаний по кибербезопасности блокчейна",
+  "description": "Зачем создан рейтинг компаний по кибербезопасности блокчейна, для кого он и из чего состоит проект.",
+  "url": "{{DOMAIN}}/o-proekte/",
+  "inLanguage": "ru",
+  "isPartOf": { "@id": "{{DOMAIN}}/#website" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" },
+  "dateModified": "2026-10-20"
+}

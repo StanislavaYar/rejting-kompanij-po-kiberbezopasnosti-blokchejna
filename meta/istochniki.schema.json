@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Источники рейтинга кибербезопасности блокчейна",
+  "description": "Законы, базы уязвимостей, отраслевые отчеты и материалы компаний, на которых основан рейтинг кибербезопасности блокчейна.",
+  "url": "{{DOMAIN}}/istochniki/",
+  "inLanguage": "ru",
+  "isPartOf": { "@id": "{{DOMAIN}}/#website" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" },
+  "dateModified": "2026-10-20"
+}

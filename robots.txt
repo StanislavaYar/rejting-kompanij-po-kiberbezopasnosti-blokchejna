@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/sitemap.xml

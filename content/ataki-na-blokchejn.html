@@ -1,0 +1,227 @@
+<div class="container page-grid">
+  <aside class="side-nav" aria-label="Разделы страницы">
+    <p class="side-nav__title">Содержание</p>
+    <ol>
+      <li><a href="#zashchita"><span>Защита блокчейна</span><span class="mono">01</span></a></li>
+      <li><a href="#set"><span>Атаки на сеть</span><span class="mono">02</span></a></li>
+      <li><a href="#kontrakty"><span>Контракты и мосты</span><span class="mono">03</span></a></li>
+      <li><a href="#infrastruktura"><span>Пользователи и инфраструктура</span><span class="mono">04</span></a></li>
+      <li><a href="#tablica"><span>Сводная таблица</span><span class="mono">05</span></a></li>
+      <li><a href="#proverka"><span>Как проверить проект</span><span class="mono">06</span></a></li>
+      <li><a href="#faq"><span>FAQ</span><span class="mono">07</span></a></li>
+      <li><a href="#sources"><span>Источники</span><span class="mono">08</span></a></li>
+    </ol>
+    <p class="side-nav__note">Опубликовано 20 октября 2026.</p>
+  </aside>
+
+  <div class="page-main">
+    <section class="article-hero" aria-labelledby="page-title">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="{{ROOT}}">Главная</a></li><li aria-current="page">Атаки на блокчейн</li></ol></nav>
+      <h1 id="page-title">Атаки на блокчейн: виды, механика и защита</h1>
+      <p class="lead">Атаки на блокчейн делятся на 3 уровня: атаки на сеть, на смарт-контракты и на пользователей с инфраструктурой. Крупнейшие кражи последних лет произошли на третьем уровне: через ключи, мосты и процессы бирж.</p>
+      <div class="meta-line">
+        <a class="meta-chip meta-chip--author" href="{{ROOT}}avtor/">
+<!--AVATAR_SM-->
+          Редакция рейтинга</a>
+        <span class="meta-chip">{{icon:calendar}} Опубликовано: <time datetime="2026-10-20">20 октября 2026</time></span>
+        <span class="meta-chip">{{icon:clock}} Время чтения: 5 мин</span>
+      </div>
+      <div class="kratko mt-lg">
+        <p class="kratko__title">{{icon:list}} Коротко</p>
+        <ul>
+          <li>Атаки на сеть дорогие и опасны в основном для небольших блокчейнов.</li>
+          <li>Уязвимости смарт-контрактов приводят к прямым потерям, потому что код нельзя исправить после публикации.</li>
+          <li>Bybit потеряла около 1,5 млрд долларов в 2025 году через процесс подписи холодного кошелька.</li>
+        </ul>
+      </div>
+      <details class="toc-mobile">
+        <summary>Содержание {{icon:chevron-down}}</summary>
+        <ol>
+          <li><a href="#zashchita">Защита блокчейна</a></li>
+          <li><a href="#set">Атаки на сеть</a></li>
+          <li><a href="#kontrakty">Контракты и мосты</a></li>
+          <li><a href="#infrastruktura">Пользователи и инфраструктура</a></li>
+          <li><a href="#tablica">Сводная таблица</a></li>
+          <li><a href="#proverka">Как проверить проект</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sources">Источники</a></li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="section" id="zashchita" aria-labelledby="h-zashchita">
+      <div class="section-head">
+        <h2 id="h-zashchita">Насколько защищен блокчейн</h2>
+        <p><a href="{{ROOT}}glossarij/#blokchejn">Блокчейн</a> защищает записи 4 механизмами: криптографией, консенсусом, децентрализацией и криптоэкономикой. Вместе эти механизмы делают подделку реестра дорогой и заметной.</p>
+      </div>
+      <div class="grid-2">
+        <div class="icon-card"><div class="icon-card__icon">{{icon:key}}</div><h3>Криптография</h3><p>Хеш-функции связывают блоки в цепочку, цифровая подпись подтверждает владельца транзакции.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:users}}</div><h3>Консенсус</h3><p>Узлы сети принимают только ту версию реестра, которую подтвердило большинство. <a href="{{ROOT}}glossarij/#konsensus">Подробнее о консенсусе</a>.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:network}}</div><h3>Децентрализация</h3><p>Копия реестра хранится на тысячах узлов, поэтому отказ одного узла не останавливает сеть.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:coins}}</div><h3>Криптоэкономика</h3><p>Атака на крупную сеть стоит дороже, чем возможная выгода злоумышленника.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="set" aria-labelledby="h-set">
+      <div class="section-head">
+        <h2 id="h-set">Атаки на уровне сети</h2>
+        <p>Атаки на уровне сети нацелены на механизм консенсуса и связь между узлами.</p>
+      </div>
+      <div class="prose">
+        <h3 id="ataka-51">Атака 51%</h3>
+        <p><a href="{{ROOT}}glossarij/#ataka-51">Атака 51%</a> - это захват больше половины вычислительной мощности или доли сети. Злоумышленник переписывает недавние транзакции и тратит одни и те же монеты дважды.</p>
+        <p>Атака 51% опасна для небольших сетей с низкой мощностью. Для Bitcoin такая атака требует оборудования, стоимость которого делает ее невыгодной.</p>
+        <h3 id="ataka-sivilly">Атака Сивиллы</h3>
+        <p><a href="{{ROOT}}glossarij/#ataka-sivilly">Атака Сивиллы</a> - это создание множества поддельных узлов для влияния на сеть. Механизмы <a href="{{ROOT}}glossarij/#proof-of-work">Proof of Work</a> и <a href="{{ROOT}}glossarij/#proof-of-stake">Proof of Stake</a> защищают от нее: влияние зависит от мощности или доли, а не от числа узлов.</p>
+        <h3 id="ataka-marshrutizacii">Атака маршрутизации</h3>
+        <p><a href="{{ROOT}}glossarij/#ataka-marshrutizacii">Атака маршрутизации</a> - это перехват трафика между узлами на уровне интернет-провайдеров. Злоумышленник изолирует часть сети и задерживает передачу блоков.</p>
+        <h3 id="ataka-zatmeniya">Атака затмения (eclipse)</h3>
+        <p>Атака затмения - это окружение одного узла подконтрольными злоумышленнику узлами. Изолированный узел видит ложное состояние реестра.</p>
+      </div>
+      <figure class="card mt-lg">
+        <div class="market">
+          <svg viewBox="0 0 760 270" role="img" aria-labelledby="a51-title a51-desc">
+            <title id="a51-title">Атака 51%: честная цепочка и цепочка злоумышленника</title>
+            <desc id="a51-desc">Честная цепочка растет от блока 1 до блока 6. Злоумышленник с большей частью мощности сети тайно строит свою ветку от блока 3, которая становится длиннее честной. Сеть принимает более длинную цепочку, и транзакции честной ветки после блока 3 отменяются.</desc>
+            <g font-family="Manrope, sans-serif" font-size="13" font-weight="600">
+              <text x="20" y="30" fill="#0E7C7B">Честная цепочка</text>
+              <text x="20" y="258" fill="#1F3A5F">Цепочка злоумышленника (больше 50% мощности)</text>
+            </g>
+            <g stroke="#7DB3B2" stroke-width="2" fill="none">
+              <line x1="90" y1="72" x2="110" y2="72"/>
+              <line x1="180" y1="72" x2="200" y2="72"/>
+              <line x1="270" y1="72" x2="290" y2="72"/>
+              <line x1="360" y1="72" x2="380" y2="72"/>
+              <line x1="450" y1="72" x2="470" y2="72"/>
+            </g>
+            <path d="M235 94 V140 Q235 152 247 152 H290" stroke="#1F3A5F" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+            <g stroke="#1F3A5F" stroke-width="2" fill="none">
+              <line x1="360" y1="174" x2="380" y2="174"/>
+              <line x1="450" y1="174" x2="470" y2="174"/>
+              <line x1="540" y1="174" x2="560" y2="174"/>
+              <line x1="630" y1="174" x2="650" y2="174"/>
+            </g>
+            <g>
+              <rect x="20" y="50" width="70" height="44" rx="6" fill="#0E7C7B"/>
+              <rect x="110" y="50" width="70" height="44" rx="6" fill="#0E7C7B"/>
+              <rect x="200" y="50" width="70" height="44" rx="6" fill="#0E7C7B"/>
+              <rect x="290" y="50" width="70" height="44" rx="6" fill="#FFFFFF" stroke="#7DB3B2" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <rect x="380" y="50" width="70" height="44" rx="6" fill="#FFFFFF" stroke="#7DB3B2" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <rect x="470" y="50" width="70" height="44" rx="6" fill="#FFFFFF" stroke="#7DB3B2" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <rect x="290" y="152" width="70" height="44" rx="6" fill="#1F3A5F"/>
+              <rect x="380" y="152" width="70" height="44" rx="6" fill="#1F3A5F"/>
+              <rect x="470" y="152" width="70" height="44" rx="6" fill="#1F3A5F"/>
+              <rect x="560" y="152" width="70" height="44" rx="6" fill="#1F3A5F"/>
+              <rect x="650" y="152" width="70" height="44" rx="6" fill="#1F3A5F"/>
+            </g>
+            <g font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">
+              <text x="55" y="76" fill="#FFFFFF">Блок 1</text>
+              <text x="145" y="76" fill="#FFFFFF">Блок 2</text>
+              <text x="235" y="76" fill="#FFFFFF">Блок 3</text>
+              <text x="325" y="76" fill="#5B6576">Блок 4</text>
+              <text x="415" y="76" fill="#5B6576">Блок 5</text>
+              <text x="505" y="76" fill="#5B6576">Блок 6</text>
+              <text x="325" y="178" fill="#FFFFFF">4'</text>
+              <text x="415" y="178" fill="#FFFFFF">5'</text>
+              <text x="505" y="178" fill="#FFFFFF">6'</text>
+              <text x="595" y="178" fill="#FFFFFF">7'</text>
+              <text x="685" y="178" fill="#FFFFFF">8'</text>
+            </g>
+            <g font-family="Inter, sans-serif" font-size="12" fill="#5B6576">
+              <text x="560" y="62"><tspan x="560">Ветка отклоняется:</tspan><tspan x="560" dy="16">транзакции в блоках</tspan><tspan x="560" dy="16">4-6 отменяются</tspan></text>
+              <text x="250" y="128"><tspan x="250">Тайная ветка от блока 3</tspan></text>
+              <text x="560" y="222"><tspan x="560">Сеть принимает более</tspan><tspan x="560" dy="16">длинную цепочку</tspan></text>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="table-caption">Схема атаки 51%: злоумышленник строит более длинную ветку, и сеть отменяет транзакции честной цепочки.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="kontrakty" aria-labelledby="h-kontrakty">
+      <div class="section-head">
+        <h2 id="h-kontrakty">Атаки на смарт-контракты и мосты</h2>
+        <p>Атаки на <a href="{{ROOT}}glossarij/#smart-kontrakt">смарт-контракты</a> и мосты используют ошибки в коде, а не слабость блокчейна.</p>
+      </div>
+      <div class="grid-2">
+        <div class="icon-card"><div class="icon-card__icon">{{icon:refresh}}</div><h3>Повторный вызов (reentrancy)</h3><p>Контракт отправляет средства до обновления баланса. Атакующий повторно вызывает функцию и выводит больше, чем имеет.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:link}}</div><h3>Атаки на кросс-чейн мосты</h3><p><a href="{{ROOT}}glossarij/#kross-chejn-most">Мост</a> хранит активы, заблокированные в одной сети, и выпускает их копии в другой. Кража ключей <a href="{{ROOT}}glossarij/#validator">валидаторов</a> моста Ronin Network в марте 2022 года привела к потере около 625 млн долларов.</p></div>
+      </div>
+      <div class="prose mt-lg">
+        <p>Защита от атак на код: аудит смарт-контрактов и повторная проверка после каждого изменения. Подробно в статье <a href="{{ROOT}}audit-smart-kontraktov/">"Аудит смарт-контрактов"</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="infrastruktura" aria-labelledby="h-infrastruktura">
+      <div class="section-head">
+        <h2 id="h-infrastruktura">Атаки на пользователей и инфраструктуру</h2>
+        <p>Атаки на пользователей и инфраструктуру обходят защиту блокчейна через людей, ключи и серверы.</p>
+      </div>
+      <div class="grid-3">
+        <div class="icon-card"><div class="icon-card__icon">{{icon:key}}</div><h3>Компрометация приватного ключа</h3><p>Злоумышленник крадет <a href="{{ROOT}}glossarij/#privatnyj-klyuch">ключ</a> или <a href="{{ROOT}}glossarij/#seed-fraza">seed-фразу</a> и подписывает транзакции от имени владельца.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:mail}}</div><h3>Фишинг</h3><p>Пользователь подписывает вредоносную транзакцию на поддельном сайте или в поддельном приложении.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:server}}</div><h3>Атака на инфраструктуру биржи</h3><p>21 февраля 2025 года злоумышленники получили доступ к <a href="{{ROOT}}glossarij/#holodnyj-koshelek">холодному кошельку</a> Bybit и вывели Ethereum на сумму около 1,5 млрд долларов. ФБР связало атаку с Северной Кореей: группировкой TraderTraitor, также известной как Lazarus.</p></div>
+      </div>
+      <div class="callout">
+        <p class="callout__title">{{icon:alert}} Холодное хранение и процесс подписи</p>
+        <p>Холодное хранение не защищает, если скомпрометирован процесс подписи транзакций. <a href="{{ROOT}}pentest-kriptobirzhi/">Пентест</a> и <a href="{{ROOT}}glossarij/#red-teaming">Red Teaming</a> проверяют именно процессы и людей вокруг кошелька.</p>
+      </div>
+    </section>
+
+    <section class="section" id="tablica" aria-labelledby="h-tablica">
+      <div class="section-head">
+        <h2 id="h-tablica">Сводная таблица атак и защиты</h2>
+        <p>Таблица сводит 8 видов атак по уровню и основному способу защиты.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Атака</th><th scope="col">Уровень</th><th scope="col">Защита</th></tr></thead>
+          <tbody>
+            <tr><td>Атака 51%</td><td>Сеть</td><td>Выбор устойчивой сети, больше подтверждений</td></tr>
+            <tr><td>Атака Сивиллы</td><td>Сеть</td><td>Механизм консенсуса</td></tr>
+            <tr><td>Атака маршрутизации</td><td>Сеть</td><td>Шифрование, разнообразие провайдеров</td></tr>
+            <tr><td>Атака затмения</td><td>Сеть</td><td>Ограничение входящих соединений, много узлов-соседей</td></tr>
+            <tr><td>Повторный вызов</td><td>Смарт-контракт</td><td>Аудит смарт-контрактов</td></tr>
+            <tr><td>Атака на мост</td><td>Смарт-контракт и ключи</td><td>Аудит, <a href="{{ROOT}}glossarij/#multipodpis">мультиподпись</a>, мониторинг</td></tr>
+            <tr><td>Кража ключа и фишинг</td><td>Пользователь</td><td>Холодное хранение, мультиподпись, обучение</td></tr>
+            <tr><td>Атака на биржу</td><td>Инфраструктура</td><td>Пентест, Red Teaming</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="proverka" aria-labelledby="h-proverka">
+      <div class="section-head">
+        <h2 id="h-proverka">Как проверить проект на устойчивость к атакам</h2>
+        <p>Проверка проекта зависит от уровня риска: код проверяет аудит смарт-контрактов, инфраструктуру проверяет пентест, процессы и людей проверяет Red Teaming. Подрядчиков по каждой задаче сравнивает <a href="{{ROOT}}">рейтинг компаний по кибербезопасности блокчейна</a>, критерии оценки описаны в <a href="{{ROOT}}metodologiya/">методологии</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <h2 id="h-faq">Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Можно ли взломать блокчейн? {{icon:plus}}</summary><p>Взломать крупный блокчейн вроде Bitcoin экономически невыгодно. Злоумышленники атакуют смарт-контракты, ключи и биржи: так произошла кража 1,5 млрд долларов у Bybit в 2025 году.</p></details>
+        <details><summary>Что такое атака 51%? {{icon:plus}}</summary><p>Атака 51% - это захват больше половины мощности сети, который позволяет переписывать транзакции. Атака опасна для небольших блокчейнов.</p></details>
+        <details><summary>Какие атаки на блокчейн самые опасные? {{icon:plus}}</summary><p>Самые крупные потери приносят атаки на ключи, мосты и инфраструктуру бирж. Кража из моста Ronin Network в 2022 году составила около 625 млн долларов.</p></details>
+        <details><summary>Защищает ли холодный кошелек от взлома? {{icon:plus}}</summary><p>Холодный кошелек защищает от удаленной кражи ключа, но не от компрометации процесса подписи. Инцидент Bybit 2025 года произошел именно так.</p></details>
+        <details><summary>Как защитить смарт-контракт от атак? {{icon:plus}}</summary><p>Смарт-контракт защищает аудит кода до публикации и повторная проверка после изменений. Ошибку в опубликованном контракте исправить нельзя.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="h-sources">
+      <div class="section-head">
+        <h2 id="h-sources">Источники</h2>
+      </div>
+      <ol class="sources">
+        <li>Bitcoin: A Peer-to-Peer Electronic Cash System (whitepaper): <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">bitcoin.org</a></li>
+        <li>Документация Ethereum по безопасности смарт-контрактов: <a href="https://ethereum.org/en/developers/docs/smart-contracts/security/" target="_blank" rel="noopener">ethereum.org</a></li>
+      </ol>
+      <div class="section-foot">
+        <a class="text-link" href="{{ROOT}}">Рейтинг компаний по кибербезопасности блокчейна {{icon:arrow-right}}</a>
+        <a class="text-link" href="{{ROOT}}metodologiya/">Методология {{icon:arrow-right}}</a>
+      </div>
+    </section>
+  </div>
+</div>

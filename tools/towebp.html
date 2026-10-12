@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>webp</title>
+<style>body{margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;background:#333}figure{margin:0;color:#fff;font:12px sans-serif}img{width:100%;display:block}pre{display:none}</style>
+<script>
+// Конвертер скриншотов в webp 1200x622 (cover: по центру по горизонтали, от верха по вертикали).
+// ?src=путь_к_папке_исходников&ext=png|webp&q=0.8
+const slugs=['paranoid-security','positive-technologies','f6','kaspersky','bi-zone','aml-crypto','mixbytes','shard','bitok','koinkit'];
+const p=new URLSearchParams(location.search);const q=parseFloat(p.get('q')||'0.8');const src=p.get('src')||'../images/companies/src';const ext=p.get('ext')||'png';
+Promise.all(slugs.map(s=>new Promise(res=>{const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=1200;c.height=622;const x=c.getContext('2d');x.imageSmoothingQuality='high';const k=Math.max(1200/i.naturalWidth,622/i.naturalHeight);const sw=1200/k,sh=622/k;x.drawImage(i,(i.naturalWidth-sw)/2,0,sw,sh,0,0,1200,622);const f=document.createElement('figure');const im=new Image();im.src=c.toDataURL('image/webp',q);f.append(im,s+' '+i.naturalWidth+'x'+i.naturalHeight);document.body.append(f);const t=document.createElement('pre');t.id='out-'+s;t.textContent=im.src;document.body.append(t);res()};i.onerror=()=>res();i.src=src+'/'+s+'.'+ext;}))).then(()=>document.title='done');
+</script>

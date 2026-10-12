@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Как добавить компанию в рейтинг кибербезопасности блокчейна",
+  "description": "Условия включения в рейтинг компаний по кибербезопасности блокчейна: требования, порядок проверки, сроки рассмотрения и форма заявки.",
+  "url": "{{DOMAIN}}/dobavit-kompaniyu/",
+  "inLanguage": "ru",
+  "dateModified": "2026-10-20",
+  "isPartOf": { "@id": "{{DOMAIN}}/#website" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" }
+}

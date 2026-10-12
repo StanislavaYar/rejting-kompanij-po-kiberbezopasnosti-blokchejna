@@ -1,0 +1,60 @@
+<div class="page-single">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="{{ROOT}}">Главная</a></li><li aria-current="page">Добавить компанию</li></ol></nav>
+  <h1>Как добавить компанию в рейтинг кибербезопасности блокчейна</h1>
+  <div class="meta-line">
+    <a class="meta-chip meta-chip--author" href="{{ROOT}}avtor/">
+<!--AVATAR_SM-->
+      Редакция рейтинга</a>
+    <span class="meta-chip">{{icon:calendar}} Обновлено: <time datetime="2026-10-20">20 октября 2026</time></span>
+  </div>
+  <p class="lead mt-md">Компания попадает в рейтинг после проверки по методологии из 7 критериев. Заявку рассматривают при ближайшем квартальном пересмотре рейтинга.</p>
+  <div class="callout callout--info">
+    <p class="callout__title">{{icon:info}} Место не продается</p>
+    <p>Место в рейтинге не продается. Позиция компании зависит только от суммы баллов по методологии.</p>
+  </div>
+
+  <section class="section" aria-labelledby="h-who">
+    <div class="section-head">
+      <h2 id="h-who">Кто может попасть в рейтинг</h2>
+      <p>Рейтинг включает компании, которые оказывают услуги по безопасности блокчейна или расследованию инцидентов с криптовалютой.</p>
+    </div>
+    <ul class="check-list">
+      <li>{{icon:check}}Компания оказывает хотя бы одну услугу: пентест блокчейн-инфраструктуры, аудит смарт-контрактов, крипто-форензику или AML-аналитику.</li>
+      <li>{{icon:check}}Компания работает с клиентами из России или СНГ.</li>
+      <li>{{icon:check}}Компания имеет публичные подтверждения экспертизы: исследования, опубликованные уязвимости, отчеты аудита или описанные кейсы.</li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="h-check">
+    <div class="section-head">
+      <h2 id="h-check">Как проходит проверка</h2>
+      <p>Редакция проверяет заявку в 4 шага. Срок рассмотрения: до ближайшего квартального пересмотра рейтинга.</p>
+    </div>
+    <ol class="steps">
+      <li>Редакция проверяет соответствие компании требованиям.</li>
+      <li>Редакция собирает публичные данные по 7 критериям.</li>
+      <li>Редакция рассчитывает баллы по шкале методологии.</li>
+      <li>Компания попадает в рейтинг, если ее сумма баллов выше, чем у компании на 10 месте.</li>
+    </ol>
+    <p class="mt-md">Компания, которая уже есть в рейтинге, может прислать новые данные для пересмотра оценки. Редакция учитывает только данные с публичным подтверждением.</p>
+    <a class="text-link" href="{{ROOT}}metodologiya/">Методология оценки {{icon:arrow-right}}</a>
+  </section>
+
+  <section class="section" aria-labelledby="h-form">
+    <div class="section-head">
+      <h2 id="h-form">Заявка на включение в рейтинг</h2>
+      <p>Поля со звездочкой обязательны.</p>
+    </div>
+    <!-- подключить обработчик -->
+    <form class="form" action="#" method="post">
+      <div class="field"><label for="f-company">Название компании <span class="req">*</span></label><input id="f-company" name="company" type="text" required autocomplete="organization"></div>
+      <div class="field"><label for="f-site">Сайт компании <span class="req">*</span></label><input id="f-site" name="site" type="url" inputmode="url" autocomplete="url" placeholder="https://" required></div>
+      <div class="field field--wide"><label for="f-services">Услуги по безопасности блокчейна <span class="req">*</span></label><textarea id="f-services" name="services" required></textarea></div>
+      <div class="field field--wide"><label for="f-proof">Ссылки на публичные подтверждения экспертизы</label><textarea id="f-proof" name="proof" aria-describedby="f-proof-hint"></textarea><span class="hint" id="f-proof-hint">Исследования, записи CVE или БДУ ФСТЭК, отчеты аудита, кейсы.</span></div>
+      <div class="field"><label for="f-email">Контактный email <span class="req">*</span></label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required></div>
+      <label class="check"><input type="checkbox" name="consent" required> <span>Я согласен на обработку персональных данных в соответствии с <a href="{{ROOT}}politika-konfidencialnosti/">Политикой конфиденциальности</a></span></label>
+      <button class="btn btn--primary" type="submit">Отправить заявку</button>
+    </form>
+    <p class="mt-md small muted">Если форма не работает, отправьте заявку на <a href="mailto:rating@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com">rating@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com</a>.</p>
+  </section>
+</div>

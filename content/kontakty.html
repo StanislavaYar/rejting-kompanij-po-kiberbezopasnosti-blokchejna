@@ -1,0 +1,51 @@
+<div class="page-single">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="{{ROOT}}">Главная</a></li><li aria-current="page">Контакты</li></ol></nav>
+  <h1 id="page-title">Контакты</h1>
+  <div class="meta-line">
+    <a class="meta-chip meta-chip--author" href="{{ROOT}}avtor/">
+<!--AVATAR_SM-->
+      Редакция рейтинга</a>
+    <span class="meta-chip">{{icon:calendar}} Обновлено: <time datetime="2026-10-20">20 октября 2026</time></span>
+  </div>
+  <p class="lead mt-lg">Редакция рейтинга отвечает на обращения в течение 3 рабочих дней.</p>
+
+  <div class="grid-2 mt-lg">
+    <div class="icon-card contact-card"><div class="icon-card__icon">{{icon:mail}}</div><h3>Общие вопросы и исправления</h3><a href="mailto:editor@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com">editor@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com</a></div>
+    <div class="icon-card contact-card"><div class="icon-card__icon">{{icon:clipboard}}</div><h3>Заявки компаний и пересмотр оценки</h3><a href="mailto:rating@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com">rating@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com</a></div>
+  </div>
+
+  <section class="section" id="forma" aria-labelledby="h-forma">
+    <div class="section-head">
+      <h2 id="h-forma">Форма обратной связи</h2>
+    </div>
+    <!-- подключить обработчик -->
+    <form class="form" action="#" method="post">
+      <div class="field">
+        <label for="contact-name">Имя</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="contact-email">Email <span class="req" aria-hidden="true">*</span></label>
+        <input id="contact-email" name="email" type="email" inputmode="email" autocomplete="email" required>
+      </div>
+      <div class="field field--wide">
+        <label for="contact-topic">Тема</label>
+        <select id="contact-topic" name="topic">
+          <option value="question">Вопрос о рейтинге</option>
+          <option value="error">Сообщение об ошибке</option>
+          <option value="company">Заявка компании</option>
+        </select>
+      </div>
+      <div class="field field--wide">
+        <label for="contact-message">Сообщение <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="contact-message" name="message" required></textarea>
+      </div>
+      <label class="check" for="contact-consent">
+        <input id="contact-consent" name="consent" type="checkbox" required>
+        <span>Я согласен с <a href="{{ROOT}}politika-konfidencialnosti/">Политикой конфиденциальности</a></span>
+      </label>
+      <button class="btn btn--primary" type="submit">Отправить</button>
+    </form>
+    <p class="mt-md muted">Чтобы добавить компанию в рейтинг, используйте форму на странице "<a href="{{ROOT}}dobavit-kompaniyu/">Добавить компанию</a>".</p>
+  </section>
+</div>

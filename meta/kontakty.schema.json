@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Контакты редакции рейтинга кибербезопасности блокчейна",
+  "description": "Как связаться с редакцией рейтинга кибербезопасности блокчейна: вопросы, исправления и заявки компаний.",
+  "url": "{{DOMAIN}}/kontakty/",
+  "inLanguage": "ru",
+  "isPartOf": { "@id": "{{DOMAIN}}/#website" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" },
+  "dateModified": "2026-10-20"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Редакционная политика рейтинга кибербезопасности блокчейна",
+  "description": "Как редакция проверяет факты, оценивает компании, исправляет ошибки и использует изображения в рейтинге кибербезопасности блокчейна.",
+  "url": "{{DOMAIN}}/redakcionnaya-politika/",
+  "inLanguage": "ru",
+  "isPartOf": { "@id": "{{DOMAIN}}/#website" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" },
+  "dateModified": "2026-10-20"
+}

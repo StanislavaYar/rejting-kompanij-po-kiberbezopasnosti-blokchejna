@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Политика конфиденциальности и cookie",
+  "description": "Какие данные собирает сайт рейтинга кибербезопасности блокчейна, как они используются и хранятся, какие cookie применяются.",
+  "url": "{{DOMAIN}}/politika-konfidencialnosti/",
+  "inLanguage": "ru",
+  "isPartOf": { "@id": "{{DOMAIN}}/#website" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" },
+  "dateModified": "2026-10-20"
+}

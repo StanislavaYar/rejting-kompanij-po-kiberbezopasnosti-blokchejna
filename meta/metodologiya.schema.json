@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Методология оценки компаний по кибербезопасности блокчейна",
+  "description": "Как оценивается рейтинг компаний по кибербезопасности блокчейна: 7 критериев, веса, шкала баллов, отбор компаний и пересмотр раз в квартал.",
+  "inLanguage": "ru",
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": "{{DOMAIN}}/metodologiya/",
+  "image": "{{DOMAIN}}/images/og-image.png",
+  "author": { "@id": "{{DOMAIN}}/#organization" },
+  "publisher": { "@id": "{{DOMAIN}}/#organization" }
+}

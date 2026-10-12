@@ -1,0 +1,356 @@
+<div class="container page-grid">
+  <aside class="side-nav" aria-label="Разделы страницы">
+    <p class="side-nav__title">Навигатор по рейтингу</p>
+    <ol>
+      <li><a href="#rating"><span>Рейтинг</span><span class="mono">01</span></a></li>
+      <li><a href="#methodology"><span>Методология</span><span class="mono">02</span></a></li>
+      <li><a href="#principles"><span>Как проверяем</span><span class="mono">03</span></a></li>
+      <li><a href="#reviews"><span>Обзоры</span><span class="mono">04</span></a></li>
+      <li><a href="#vendor-selection"><span>Выбор подрядчика</span><span class="mono">05</span></a></li>
+      <li><a href="#threats"><span>Угрозы</span><span class="mono">06</span></a></li>
+      <li><a href="#ib-principles"><span>Принципы ИБ</span><span class="mono">07</span></a></li>
+      <li><a href="#incidents"><span>Взломы</span><span class="mono">08</span></a></li>
+      <li><a href="#regulation"><span>Регулирование</span><span class="mono">09</span></a></li>
+      <li><a href="#faq"><span>FAQ</span><span class="mono">10</span></a></li>
+      <li><a href="#sources"><span>Источники</span><span class="mono">11</span></a></li>
+    </ol>
+    <p class="side-nav__note">Обновлено 20 октября 2026. Следующий пересмотр: не позднее января 2027.</p>
+  </aside>
+
+  <div class="page-main">
+    <!-- 1. Hero -->
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero__grid">
+        <div>
+          <h1 id="page-title">Рейтинг компаний по кибербезопасности блокчейна 2026</h1>
+          <p class="lead">Рейтинг компаний по кибербезопасности блокчейна сравнивает 10 подрядчиков из России и СНГ по 7 критериям. Кибербезопасность блокчейна - это защита блокчейн-сетей, смарт-контрактов, криптокошельков и инфраструктуры бирж от атак, а также расследование краж криптоактивов. Рейтинг помогает CISO, CTO и руководителям финтех-компаний выбрать подрядчика под конкретную задачу.</p>
+          <div class="meta-line">
+            <a class="meta-chip meta-chip--author" href="{{ROOT}}avtor/">
+<!--AVATAR_SM-->
+              Редакция рейтинга</a>
+            <span class="meta-chip">{{icon:calendar}} Обновлено: <time datetime="2026-10-20">20 октября 2026</time></span>
+            <span class="meta-chip">{{icon:building}} 10 компаний</span>
+            <span class="meta-chip">{{icon:sliders}} 7 критериев</span>
+            <a class="meta-link" href="{{ROOT}}metodologiya/">Как мы оцениваем {{icon:chevron-right}}</a>
+          </div>
+        </div>
+        <div class="kratko">
+          <p class="kratko__title">{{icon:list}} Коротко</p>
+          <ul>
+            <li>Рейтинг оценивает 10 компаний по 7 критериям, максимум 100 баллов.</li>
+            <li>Первое место заняла Paranoid Security с результатом 77,5 балла.</li>
+            <li>Баллы основаны только на публичных и проверяемых данных.</li>
+          </ul>
+        </div>
+      </div>
+      <details class="toc-mobile">
+        <summary>Содержание {{icon:chevron-down}}</summary>
+        <ol>
+          <li><a href="#rating">Рейтинг</a></li>
+          <li><a href="#methodology">Методология</a></li>
+          <li><a href="#principles">Как проверяем</a></li>
+          <li><a href="#reviews">Обзоры</a></li>
+          <li><a href="#vendor-selection">Выбор подрядчика</a></li>
+          <li><a href="#threats">Угрозы</a></li>
+          <li><a href="#ib-principles">Принципы ИБ</a></li>
+          <li><a href="#incidents">Взломы</a></li>
+          <li><a href="#regulation">Регулирование</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sources">Источники</a></li>
+        </ol>
+      </details>
+    </section>
+
+    <!-- 2. Сводная таблица -->
+    <section class="section" id="rating" aria-labelledby="h-rating">
+      <div class="section-head">
+        <h2 id="h-rating">Рейтинг компаний по кибербезопасности блокчейна: топ-10 в России и СНГ</h2>
+        <p>Сводная таблица показывает итоговый балл каждой компании по методологии рейтинга. Баллы ниже 100, потому что ни одна компания не закрывает все 7 направлений одновременно. <a href="{{ROOT}}metodologiya/">Методология оценки</a></p>
+      </div>
+{{include:content/_rating-table.html}}
+    </section>
+
+    <!-- 3. Методология кратко -->
+    <section class="section" id="methodology" aria-labelledby="h-methodology">
+      <div class="section-head">
+        <h2 id="h-methodology">Как мы составляли рейтинг</h2>
+        <p>Рейтинг оценивает каждую компанию по 7 критериям с общим весом 100 баллов. Все компании проходят одинаковую проверку по публичным данным: сайты, исследования, базы уязвимостей, отраслевые обзоры.</p>
+      </div>
+      <div class="grid-2">
+        <div class="icon-card"><span class="icon-card__weight">20</span><div class="icon-card__icon">{{icon:crosshair}}</div><h3>Наступательная экспертиза</h3><p>Пентест, Red Teaming, анализ инфраструктуры бирж и кошельков.</p></div>
+        <div class="icon-card"><span class="icon-card__weight">20</span><div class="icon-card__icon">{{icon:search}}</div><h3>Крипто-форензика и трассировка</h3><p>Отслеживание транзакций, заключения для суда и следствия.</p></div>
+        <div class="icon-card"><span class="icon-card__weight">15</span><div class="icon-card__icon">{{icon:book}}</div><h3>Публичные исследования и уязвимости</h3><p>Опубликованные CVE и записи БДУ ФСТЭК, отчеты, исследования.</p></div>
+        <div class="icon-card"><span class="icon-card__weight">15</span><div class="icon-card__icon">{{icon:code}}</div><h3>Аудит смарт-контрактов</h3><p>Проверка кода контрактов, публичные отчеты аудита.</p></div>
+        <div class="icon-card"><span class="icon-card__weight">10</span><div class="icon-card__icon">{{icon:scale}}</div><h3>Работа с правоохранительными органами и судом</h3><p>Участие специалистов в делах как экспертов.</p></div>
+        <div class="icon-card"><span class="icon-card__weight">10</span><div class="icon-card__icon">{{icon:file-text}}</div><h3>Прозрачность результата</h3><p>Состав отчета, сроки, план устранения уязвимостей.</p></div>
+        <div class="icon-card"><span class="icon-card__weight">10</span><div class="icon-card__icon">{{icon:globe}}</div><h3>Доступность для бизнеса РФ и СНГ</h3><p>Работа с клиентами из региона, русскоязычная команда.</p></div>
+        <div class="icon-card card--quiet"><div class="icon-card__icon">{{icon:sliders}}</div><h3>Шкала из 4 уровней</h3><p>Каждый критерий оценивается по шкале из 4 уровней: 0, 50%, 75% или 100% веса. Полный уровень получает компания, у которой есть услуга, публичные подтверждения и собственные исследования или инструменты.</p></div>
+      </div>
+      <div class="section-foot">
+        <a class="btn btn--secondary" href="{{ROOT}}metodologiya/">Полная методология {{icon:arrow-right}}</a>
+      </div>
+    </section>
+
+    <!-- 4. Как проверяем -->
+    <section class="section" id="principles" aria-labelledby="h-principles">
+      <div class="section-head">
+        <h2 id="h-principles">Как мы составляем и проверяем рейтинг</h2>
+        <p>Редакция рейтинга применяет к 10 компаниям одни и те же правила. Место компании определяет только сумма баллов по методологии.</p>
+      </div>
+      <div class="grid-2">
+        <div class="icon-card"><div class="icon-card__icon">{{icon:list-checks}}</div><h3>Одинаковые критерии для всех</h3><p>Каждая компания получает оценку по тем же 7 критериям и той же шкале. Карточки компаний имеют одинаковую структуру и одинаковый объем.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:shield-check}}</div><h3>Только проверяемые источники</h3><p>Редакция учитывает данные с сайтов компаний, записи в базах уязвимостей, опубликованные отчеты и материалы отраслевых СМИ. Закрытые проекты под NDA в оценку не входят.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:refresh}}</div><h3>Пересмотр раз в квартал</h3><p>Редакция обновляет баллы не реже 1 раза в 3 месяца. Дата последнего пересмотра стоит в начале страницы.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:user-plus}}</div><h3>Открытая заявка на участие</h3><p>Компания может подать заявку на включение в рейтинг или на пересмотр оценки. Место в рейтинге не продается.</p></div>
+      </div>
+      <div class="section-foot">
+        <a class="text-link" href="{{ROOT}}redakcionnaya-politika/">Редакционная политика {{icon:arrow-right}}</a>
+        <a class="text-link" href="{{ROOT}}dobavit-kompaniyu/">Добавить компанию {{icon:arrow-right}}</a>
+      </div>
+    </section>
+
+    <!-- 5. Обзоры компаний -->
+    <section class="section" id="reviews" aria-labelledby="h-reviews">
+      <div class="section-head">
+        <h2 id="h-reviews">Подробные обзоры компаний</h2>
+        <p>Каждая карточка построена по одной схеме: описание, 4 услуги, 2 подтверждения экспертизы, баллы по 7 критериям, 2 сильные стороны и 2 ограничения.</p>
+        <p class="legend" id="score-legend">Обозначения шкал: <abbr title="Наступательная экспертиза">НЭ</abbr> - наступательная экспертиза, <abbr title="Крипто-форензика и трассировка">КФ</abbr> - крипто-форензика, <abbr title="Публичные исследования и уязвимости">ИССЛ</abbr> - исследования и уязвимости, <abbr title="Аудит смарт-контрактов">СК</abbr> - аудит смарт-контрактов, <abbr title="Работа с правоохранительными органами и судом">ПО</abbr> - работа с правоохранительными органами, <abbr title="Прозрачность результата">ПР</abbr> - прозрачность результата, <abbr title="Доступность для бизнеса РФ и СНГ">ДОСТ</abbr> - доступность для бизнеса РФ и СНГ.</p>
+      </div>
+{{include:content/_company-cards.html}}
+    </section>
+
+    <!-- 6. Выбор подрядчика -->
+    <section class="section" id="vendor-selection" aria-labelledby="h-vendor">
+      <div class="section-head">
+        <h2 id="h-vendor">Как выбрать подрядчика по безопасности блокчейна</h2>
+        <p>Подрядчик выбирается по задаче: пентест проверяет инфраструктуру, аудит смарт-контрактов проверяет код, крипто-форензика отслеживает украденные средства. Одна компания редко закрывает все три задачи.</p>
+      </div>
+      <div class="split">
+        <div>
+          <div class="table-wrap table-wrap--sticky">
+            <table class="data-table">
+              <thead><tr><th scope="col">Задача</th><th scope="col">Какая услуга нужна</th><th scope="col">Кому подходит</th></tr></thead>
+              <tbody>
+                <tr><td>Проверить биржу или кошелек перед запуском</td><td><a href="{{ROOT}}pentest-kriptobirzhi/">Пентест инфраструктуры и приложений</a></td><td>Криптобиржи, кастодиальные кошельки, финтех</td></tr>
+                <tr><td>Проверить, выдержит ли компания целевую атаку</td><td><a href="{{ROOT}}glossarij/#red-teaming">Red Teaming</a></td><td>Крупные биржи, банки с крипто-направлением</td></tr>
+                <tr><td>Проверить код контрактов перед запуском</td><td><a href="{{ROOT}}audit-smart-kontraktov/">Аудит смарт-контрактов</a></td><td>DeFi-протоколы, токен-проекты</td></tr>
+                <tr><td>Найти украденную криптовалюту</td><td><a href="{{ROOT}}kripto-forenzika/">Крипто-форензика и трассировка</a></td><td>Пострадавшие компании, юристы</td></tr>
+                <tr><td>Проверить источник входящих средств</td><td><a href="{{ROOT}}glossarij/#aml">AML-аналитика</a></td><td>Биржи, обменники, банки</td></tr>
+                <tr><td>Разобрать взлом и найти точку входа</td><td>Расследование инцидентов</td><td>Любой пострадавший бизнес</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-md muted">Пентест инфраструктуры биржи обычно длится около 1 месяца, Red Teaming до 8 месяцев (по данным Paranoid Security). Сроки других компаний зависят от объема проекта и уточняются при обсуждении.</p>
+        </div>
+        <div class="checklist checklist--cols">
+          <h3>{{icon:clipboard}} Вопросы подрядчику перед договором</h3>
+          <ul>
+            <li>Кто конкретно будет вести проект и какой у него опыт?</li>
+            <li>Что войдет в отчет: описание уязвимостей, оценка критичности, доказательства, план устранения?</li>
+            <li>Какая часть работы выполняется вручную, а какая сканерами?</li>
+            <li>Есть ли у компании опубликованные уязвимости или исследования?</li>
+            <li>Сколько длится проект и от чего зависит срок?</li>
+            <li>Проводит ли подрядчик повторную проверку после исправлений?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Угрозы -->
+    <section class="section" id="threats" aria-labelledby="h-threats">
+      <div class="section-head">
+        <h2 id="h-threats">Кибербезопасность блокчейна: основные угрозы и атаки</h2>
+        <p>Кибербезопасность блокчейна защищает от атак на 3 уровнях: сеть, смарт-контракты и пользователи с инфраструктурой. Большинство крупных краж происходит не через взлом самого блокчейна, а через ключи, мосты и инфраструктуру бирж.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Атака</th><th scope="col">Как работает</th><th scope="col">Чем закрывается</th></tr></thead>
+          <tbody>
+            <tr><td><a href="{{ROOT}}glossarij/#ataka-51">Атака 51%</a></td><td>Злоумышленник контролирует больше половины мощности сети и переписывает транзакции</td><td>Выбор устойчивой сети, мониторинг, больше подтверждений</td></tr>
+            <tr><td><a href="{{ROOT}}glossarij/#ataka-sivilly">Атака Сивиллы</a></td><td>Злоумышленник создает множество поддельных узлов</td><td>Механизмы консенсуса, ограничение новых узлов</td></tr>
+            <tr><td><a href="{{ROOT}}glossarij/#ataka-marshrutizacii">Атака маршрутизации</a></td><td>Злоумышленник перехватывает трафик между узлами</td><td>Шифрование, распределенная сеть узлов</td></tr>
+            <tr><td>Уязвимость смарт-контракта</td><td>Ошибка в коде позволяет вывести средства, например повторным вызовом функции</td><td>Аудит смарт-контрактов, формальная верификация</td></tr>
+            <tr><td>Компрометация приватного ключа</td><td>Злоумышленник крадет ключ или seed-фразу</td><td>Холодное хранение, мультиподпись</td></tr>
+            <tr><td>Фишинг</td><td>Пользователь подписывает транзакцию на поддельном сайте</td><td>Обучение сотрудников, проверка адресов</td></tr>
+            <tr><td>Атака на мост</td><td>Ошибка в логике или ключах кросс-чейн моста</td><td>Аудит кода, пентест, мониторинг</td></tr>
+            <tr><td>Атака на инфраструктуру биржи</td><td>Взлом серверов, процессов подписи, рабочих мест</td><td>Пентест, Red Teaming</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid-3 mt-lg">
+        <div class="icon-card"><div class="icon-card__icon">{{icon:globe}}</div><h3>Публичный блокчейн</h3><p>Публичный блокчейн открыт для любого участника, например Bitcoin и Ethereum. Главные риски: атака 51% в небольших сетях и уязвимости смарт-контрактов.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:lock}}</div><h3>Частный блокчейн</h3><p>Частный блокчейн работает только для участников с разрешением, обычно внутри компании или консорциума. Главный риск: компрометация узлов и учетных записей администраторов.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:layers}}</div><h3>Гибридный блокчейн</h3><p>Гибридный блокчейн сочетает открытые и закрытые данные. Главный риск: ошибки в разграничении доступа между частями системы.</p></div>
+      </div>
+      <div class="section-foot">
+        <a class="text-link" href="{{ROOT}}ataki-na-blokchejn/">Атаки на блокчейн: подробный разбор {{icon:arrow-right}}</a>
+      </div>
+    </section>
+
+    <!-- 8. Принципы ИБ -->
+    <section class="section" id="ib-principles" aria-labelledby="h-ib">
+      <div class="section-head">
+        <h2 id="h-ib">Информационная безопасность блокчейн: конфиденциальность, целостность, доступность</h2>
+        <p>Информационная безопасность блокчейн-систем оценивается по 3 принципам: конфиденциальность, целостность и доступность. Блокчейн хорошо обеспечивает целостность и доступность данных, но не обеспечивает конфиденциальность сам по себе.</p>
+      </div>
+      <div class="cia">
+        <div class="cia__col">
+          <div class="cia__head">{{icon:lock}}<h3>Конфиденциальность</h3></div>
+          <div class="cia__row"><p class="cia__label">{{icon:check}} Что дает блокчейн</p>Шифрование и псевдонимные адреса</div>
+          <div class="cia__row"><p class="cia__label">{{icon:minus}} Чего блокчейн не дает</p>Данные публичного блокчейна видны всем участникам сети<br><span class="cia__verdict cia__verdict--no">Нужны дополнительные меры</span></div>
+        </div>
+        <div class="cia__col">
+          <div class="cia__head">{{icon:link}}<h3>Целостность</h3></div>
+          <div class="cia__row"><p class="cia__label">{{icon:check}} Что дает блокчейн</p>Хеш-цепочка и консенсус защищают записи от изменения</div>
+          <div class="cia__row"><p class="cia__label">{{icon:minus}} Чего блокчейн не дает</p>Ошибку в смарт-контракте нельзя исправить после записи<br><span class="cia__verdict">Обеспечивается блокчейном</span></div>
+        </div>
+        <div class="cia__col">
+          <div class="cia__head">{{icon:server}}<h3>Доступность</h3></div>
+          <div class="cia__row"><p class="cia__label">{{icon:check}} Что дает блокчейн</p>Копия реестра хранится на тысячах узлов</div>
+          <div class="cia__row"><p class="cia__label">{{icon:minus}} Чего блокчейн не дает</p>Пользователь теряет доступ к средствам вместе с ключом<br><span class="cia__verdict">Обеспечивается блокчейном</span></div>
+        </div>
+      </div>
+      <div class="prose mt-lg">
+        <p>Целостность записей в блокчейне обеспечивает хеш-цепочка: изменение одного блока меняет хеши всех следующих. Консенсус сети отклоняет такую версию реестра.</p>
+        <p>Конфиденциальность в публичных сетях требует дополнительных мер: шифрования данных вне цепочки, приватных сетей или протоколов с доказательствами с нулевым разглашением.</p>
+      </div>
+      <div class="callout">
+        <p class="callout__title">{{icon:alert}} 152-ФЗ и неизменяемость записей</p>
+        <p>Неизменяемость блокчейна создает конфликт с 152-ФЗ "О персональных данных": закон дает человеку право требовать уточнения и удаления данных. Поэтому персональные данные не записывают в блокчейн напрямую.</p>
+      </div>
+    </section>
+
+    <!-- 9. Взломы -->
+    <section class="section" id="incidents" aria-labelledby="h-incidents">
+      <div class="section-head">
+        <h2 id="h-incidents">Крупнейшие взломы блокчейн-проектов</h2>
+        <p>Крупнейшие кражи криптовалюты последних лет произошли через компрометацию ключей и процессов подписи, а не через взлом алгоритмов блокчейна. Bybit потеряла около 1,5 млрд долларов в феврале 2025 года.</p>
+      </div>
+      <figure class="card">
+        <div class="timeline">
+          <svg viewBox="0 0 760 260" role="img" aria-labelledby="tl-title tl-desc">
+            <title id="tl-title">Таймлайн крупных взломов блокчейн-проектов 2022-2026</title>
+            <desc id="tl-desc">Ущерб в миллионах долларов: Ronin Network, март 2022, около 625; Bybit, февраль 2025, около 1500; Drift Protocol, апрель 2026, около 280; Wasabi Protocol, апрель 2026, около 5.</desc>
+            <g stroke="#E3E6EB" stroke-width="1">
+              <line x1="40" y1="210" x2="740" y2="210"/>
+              <line x1="40" y1="150" x2="740" y2="150" stroke-dasharray="3 4"/>
+              <line x1="40" y1="90" x2="740" y2="90" stroke-dasharray="3 4"/>
+              <line x1="40" y1="30" x2="740" y2="30" stroke-dasharray="3 4"/>
+            </g>
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#5B6576">
+              <text x="36" y="214" text-anchor="end">0</text>
+              <text x="36" y="154" text-anchor="end">500</text>
+              <text x="36" y="94" text-anchor="end">1000</text>
+              <text x="36" y="34" text-anchor="end">1500</text>
+              <text x="90" y="232" text-anchor="middle">2022</text>
+              <text x="250" y="232" text-anchor="middle">2023</text>
+              <text x="410" y="232" text-anchor="middle">2024</text>
+              <text x="570" y="232" text-anchor="middle">2025</text>
+              <text x="700" y="232" text-anchor="middle">2026</text>
+            </g>
+            <g>
+              <rect x="70" y="135" width="40" height="75" rx="4" fill="#3A9695"/>
+              <rect x="550" y="30" width="40" height="180" rx="4" fill="#0E7C7B"/>
+              <rect x="660" y="176.4" width="34" height="33.6" rx="4" fill="#7DB3B2"/>
+              <rect x="704" y="208" width="34" height="2" rx="1" fill="#7DB3B2"/>
+            </g>
+            <g font-family="Manrope, sans-serif" font-size="12" font-weight="600" fill="#0F1B2D">
+              <text x="90" y="112" text-anchor="middle">Ronin</text>
+              <text x="570" y="20" text-anchor="end" dx="-26">Bybit</text>
+              <text x="677" y="154" text-anchor="middle">Drift</text>
+              <text x="721" y="190" text-anchor="middle">Wasabi</text>
+            </g>
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#5B6576">
+              <text x="90" y="127" text-anchor="middle">~625</text>
+              <text x="570" y="20" text-anchor="start" dx="26">~1500</text>
+              <text x="677" y="169" text-anchor="middle">~280</text>
+              <text x="721" y="203" text-anchor="middle">~5</text>
+              <text x="740" y="250" text-anchor="end">млн долларов</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="table-caption">Источник: TRM Labs 2026 Crypto Crime Report, Chainalysis 2026 Crypto Crime Report, официальные заявления пострадавших компаний и ФБР.</figcaption>
+      </figure>
+      <div class="table-wrap table-wrap--sticky mt-lg">
+        <table class="data-table">
+          <thead><tr><th scope="col">Инцидент</th><th scope="col">Дата</th><th scope="col">Ущерб</th><th scope="col">Вектор атаки</th></tr></thead>
+          <tbody>
+            <tr><td>Ronin Network (Axie Infinity)</td><td class="nowrap">март 2022</td><td class="nowrap">около 625 млн долларов</td><td>Компрометация ключей валидаторов кросс-чейн моста</td></tr>
+            <tr><td>Bybit</td><td class="nowrap">21 февраля 2025</td><td class="nowrap">около 1,5 млрд долларов в Ethereum</td><td>Доступ к холодному кошельку через процесс подписи</td></tr>
+            <tr><td>Drift Protocol</td><td class="nowrap">1 апреля 2026</td><td class="nowrap">около 280 млн долларов</td><td>Социальная инженерия подписантов мультиподписи и захват прав администратора</td></tr>
+            <tr><td>Wasabi Protocol</td><td class="nowrap">30 апреля 2026</td><td class="nowrap">около 5 млн долларов</td><td>Компрометация единственного ключа администратора без мультиподписи</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>ФБР связало атаку на Bybit с Северной Кореей: группировкой TraderTraitor, также известной как Lazarus. По данным Chainalysis 2026 Crypto Crime Report, подозрительные криптоадреса получили не менее 154 млрд долларов в 2025 году.</p>
+      </div>
+      <div class="section-foot">
+        <a class="text-link" href="{{ROOT}}kripto-forenzika/">Как расследуют кражу криптовалюты {{icon:arrow-right}}</a>
+      </div>
+    </section>
+
+    <!-- 10. Регулирование -->
+    <section class="section" id="regulation" aria-labelledby="h-regulation">
+      <div class="section-head">
+        <h2 id="h-regulation">Регулирование безопасности блокчейна в России</h2>
+        <p>С 3 марта 2026 года в России действует порядок ареста и изъятия криптовалюты в уголовном процессе. Федеральный закон от 20.02.2026 № 38-ФЗ признал цифровую валюту имуществом для целей уголовного законодательства.</p>
+      </div>
+      <div class="grid-2">
+        <div class="icon-card"><div class="icon-card__icon">{{icon:gavel}}</div><h3>Закон об аресте и изъятии криптовалюты</h3><p>Закон <a href="https://www.consultant.ru/document/cons_doc_LAW_527055/" target="_blank" rel="noopener">№ 38-ФЗ</a> приняла Государственная Дума 10 февраля 2026 года, Совет Федерации одобрил его 18 февраля 2026 года. Закон дополнил УПК статьей 164.2: изъятие цифровой валюты проводится с участием специалиста.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:landmark}}</div><h3>Позиция судов</h3><p>Конституционный Суд РФ 20 января 2026 года постановлением № 2-П обеспечил судебную защиту требований владельцев цифровой валюты. Пленум Верховного Суда РФ 16 июня 2026 года отнес цифровую валюту и цифровые права к предметам кражи.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:eye}}</div><h3>"Прозрачный блокчейн" Росфинмониторинга</h3><p><a href="https://www.fedsfm.ru" target="_blank" rel="noopener">Росфинмониторинг</a> использует собственный инструмент анализа транзакций "Прозрачный блокчейн". Инструментом пользуются государственные и правоохранительные органы, доступ также открывают банкам. Публичного доступа к инструменту нет.</p></div>
+        <div class="icon-card"><div class="icon-card__icon">{{icon:database}}</div><h3>152-ФЗ и неизменяемость записей</h3><p>Закон <a href="https://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" rel="noopener">"О персональных данных"</a> требует возможности уточнять и удалять данные. Блокчейн-проекты хранят персональные данные вне цепочки, а в реестр записывают только хеши.</p></div>
+      </div>
+      <div class="callout">
+        <p class="callout__title">{{icon:info}} Не юридическая консультация</p>
+        <p>Информация в этом разделе не является юридической консультацией. Для решений по конкретному делу обратитесь к юристу.</p>
+      </div>
+    </section>
+
+    <!-- 11. FAQ -->
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <h2 id="h-faq">Частые вопросы</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq">
+          <details open><summary>Как выбрать компанию по кибербезопасности блокчейна? {{icon:plus}}</summary><p>Компанию выбирают по задаче: пентест для инфраструктуры, аудит для смарт-контрактов, крипто-форензика для расследования краж. Проверьте опубликованные исследования подрядчика, состав отчета и то, кто лично ведет проект.</p></details>
+          <details><summary>Чем аудит смарт-контрактов отличается от пентеста? {{icon:plus}}</summary><p>Аудит смарт-контрактов проверяет код контрактов в блокчейне. Пентест проверяет серверы, приложения, сеть и процессы компании через моделирование атаки. Бирже обычно нужны обе проверки.</p></details>
+          <details><summary>Безопасен ли блокчейн сам по себе? {{icon:plus}}</summary><p>Блокчейн защищает записи от изменения за счет хеш-цепочки и консенсуса. Большинство краж происходит через ключи, смарт-контракты и инфраструктуру бирж: Bybit потеряла около 1,5 млрд долларов в 2025 году без взлома самого Ethereum.</p></details>
+          <details><summary>Что такое атака 51%? {{icon:plus}}</summary><p>Атака 51% - это захват больше половины вычислительной мощности или доли сети, который позволяет переписывать транзакции. Атака опасна для небольших сетей и практически нереальна для Bitcoin из-за стоимости оборудования.</p></details>
+          <details><summary>Какие принципы информационной безопасности обеспечивает блокчейн? {{icon:plus}}</summary><p>Блокчейн обеспечивает 2 из 3 принципов информационной безопасности: целостность и доступность. Конфиденциальность в публичных сетях требует дополнительного шифрования или приватных сетей.</p></details>
+          <details><summary>Можно ли вернуть украденную криптовалюту в России? {{icon:plus}}</summary><p>Вернуть криптовалюту можно, если средства дошли до биржи или сервиса, который способен их заморозить. Трассировку нужно начинать в первые часы после кражи, параллельно с заявлением в полицию.</p></details>
+          <details><summary>Может ли следствие в России арестовать криптовалюту? {{icon:plus}}</summary><p>Да, с 3 марта 2026 года действует закон № 38-ФЗ. Закон ввел статью 164.2 УПК об изъятии цифровой валюты с участием специалиста и порядок ареста криптовалюты.</p></details>
+          <details><summary>Сколько длится проверка безопасности блокчейн-проекта? {{icon:plus}}</summary><p>Пентест внешнего периметра длится около 1 месяца, внутреннего 1-2 месяца, Red Teaming около 8 месяцев (данные Paranoid Security). Срок аудита смарт-контрактов зависит от объема кода.</p></details>
+          <details><summary>Как компания может попасть в рейтинг? {{icon:plus}}</summary><p>Компания подает заявку на странице "Добавить компанию". Редакция оценивает ее по тем же 7 критериям и включает в рейтинг при пересмотре, который проходит 1 раз в квартал.</p></details>
+        </div>
+        <div class="card aside-card">
+          <h3>Не нашли ответ?</h3>
+          <p>Критерии, веса и шкала баллов описаны в методологии. Вопросы и исправления редакция принимает по почте и через форму обратной связи.</p>
+          <a class="btn btn--secondary" href="{{ROOT}}metodologiya/">Смотреть методологию</a>
+          <a class="btn btn--secondary mt-sm" href="{{ROOT}}kontakty/">Написать редакции</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Источники -->
+    <section class="section" id="sources" aria-labelledby="h-sources">
+      <div class="section-head">
+        <h2 id="h-sources">Источники и нормативная база</h2>
+      </div>
+      <ol class="sources">
+        <li>Федеральный закон от 20.02.2026 № 38-ФЗ: <a href="https://www.consultant.ru/document/cons_doc_LAW_527055/" target="_blank" rel="noopener">consultant.ru</a></li>
+        <li>Федеральный закон от 27.07.2006 № 152-ФЗ "О персональных данных": <a href="https://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" rel="noopener">consultant.ru</a></li>
+        <li>Банк данных угроз ФСТЭК, запись BDU 2025-16423: <a href="https://bdu.fstec.ru/vul/2025-16423" target="_blank" rel="noopener">bdu.fstec.ru</a></li>
+        <li>Росфинмониторинг: <a href="https://www.fedsfm.ru" target="_blank" rel="noopener">fedsfm.ru</a></li>
+        <li>TRM Labs, 2026 Crypto Crime Report: <a href="https://www.trmlabs.com/reports-and-whitepapers/2026-crypto-crime-report" target="_blank" rel="noopener">trmlabs.com</a></li>
+        <li>Chainalysis, 2026 Crypto Crime Report: <a href="https://www.chainalysis.com/blog/2026-crypto-crime-report-introduction/" target="_blank" rel="noopener">chainalysis.com</a></li>
+        <li>Positive Technologies, CODE RED 2026: <a href="https://ptsecurity.com/research/analytics/russia-cyberthreat-landscape-2026/" target="_blank" rel="noopener">ptsecurity.com</a></li>
+      </ol>
+      <div class="section-foot">
+        <a class="text-link" href="{{ROOT}}istochniki/">Все источники рейтинга {{icon:arrow-right}}</a>
+      </div>
+    </section>
+  </div>
+</div>

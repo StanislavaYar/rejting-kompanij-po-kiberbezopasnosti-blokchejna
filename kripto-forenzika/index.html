@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Крипто-форензика: как расследуют кражу криптовалюты</title>
+<meta name="description" content="Как расследуют кражу криптовалюты в России: трассировка транзакций, инструменты блокчейн-аналитики, закон 38-ФЗ и первые действия после кражи.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/kripto-forenzika/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Рейтинг компаний по кибербезопасности блокчейна">
+<meta property="og:title" content="Крипто-форензика: как расследуют кражу криптовалюты">
+<meta property="og:description" content="Как расследуют кражу криптовалюты в России: трассировка транзакций, инструменты блокчейн-аналитики, закон 38-ФЗ и первые действия после кражи.">
+<meta property="og:url" content="https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/kripto-forenzika/">
+<meta property="og:image" content="https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/global.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization",
+      "name": "Редакция рейтинга кибербезопасности блокчейна",
+      "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "editor@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#website",
+      "name": "Рейтинг компаний по кибербезопасности блокчейна",
+      "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/",
+      "inLanguage": "ru",
+      "publisher": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Главная","item":"https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/"},
+{"@type":"ListItem","position":2,"name":"Крипто-форензика","item":"https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/kripto-forenzika/"}
+]}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/kripto-forenzika/#article",
+      "headline": "Крипто-форензика: как расследуют кражу криптовалюты в России",
+      "description": "Как расследуют кражу криптовалюты в России: трассировка транзакций, инструменты блокчейн-аналитики, закон 38-ФЗ и первые действия после кражи.",
+      "inLanguage": "ru",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/kripto-forenzika/",
+      "image": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/images/og-image.png",
+      "author": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" },
+      "publisher": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/kripto-forenzika/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Можно ли отследить биткоин?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Каждая транзакция Bitcoin записана в публичном реестре. Специалист отслеживает движение средств до биржи или сервиса, который может знать владельца адреса." } },
+        { "@type": "Question", "name": "Можно ли вернуть украденную криптовалюту?", "acceptedAnswer": { "@type": "Answer", "text": "Вернуть криптовалюту можно, если средства попали на биржу или сервис, который их заморозил. Шанс выше, если трассировка начата в первые часы после кражи." } },
+        { "@type": "Question", "name": "Сколько длится расследование кражи криптовалюты?", "acceptedAnswer": { "@type": "Answer", "text": "Срок зависит от числа адресов и использования миксеров. Первичная трассировка до точки вывода занимает от нескольких часов до нескольких дней." } },
+        { "@type": "Question", "name": "Может ли полиция арестовать криптовалюту?", "acceptedAnswer": { "@type": "Answer", "text": "Да. С 3 марта 2026 года закон № 38-ФЗ разрешает арест и изъятие цифровой валюты в уголовном процессе с участием специалиста." } },
+        { "@type": "Question", "name": "Чем AML-проверка отличается от расследования?", "acceptedAnswer": { "@type": "Answer", "text": "AML-проверка оценивает риск отдельного адреса. Расследование восстанавливает весь путь средств и готовит материалы для следствия." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header" role="banner">
+  <div class="container">
+    <a class="site-logo" href="../" aria-label="Рейтинг кибербезопасности блокчейна, на главную">
+      <img class="site-logo__img" src="../images/logo.svg" width="32" height="32" alt="">
+      <span class="site-logo__text">
+        <span class="site-logo__name">Рейтинг кибербезопасности блокчейна</span>
+        <span class="site-logo__tag">Россия и СНГ, 2026</span>
+      </span>
+    </a>
+    <input class="nav-toggle-input" type="checkbox" id="nav-toggle" aria-label="Открыть меню">
+    <label class="nav-toggle" for="nav-toggle" aria-hidden="true">
+      <svg class="icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </label>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <ul class="site-nav__list">
+        <li><a data-nav="home" href="../">Рейтинг</a></li>
+        <li><a data-nav="metodologiya" href="../metodologiya/">Методология</a></li>
+        <li>
+          <details class="nav-drop">
+            <summary data-nav="stati" aria-current="page">Статьи <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <ul class="nav-drop__menu">
+              <li><a data-nav="audit-smart-kontraktov" href="../audit-smart-kontraktov/">Аудит смарт-контрактов</a></li>
+              <li><a data-nav="kripto-forenzika" href="../kripto-forenzika/">Крипто-форензика</a></li>
+              <li><a data-nav="ataki-na-blokchejn" href="../ataki-na-blokchejn/">Атаки на блокчейн</a></li>
+              <li><a data-nav="pentest-kriptobirzhi" href="../pentest-kriptobirzhi/">Пентест криптобиржи</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a data-nav="glossarij" href="../glossarij/">Глоссарий</a></li>
+        <li class="nav-cta"><a data-nav="dobavit-kompaniyu" href="../dobavit-kompaniyu/">Добавить компанию</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="container page-grid">
+  <aside class="side-nav" aria-label="Разделы страницы">
+    <p class="side-nav__title">Содержание</p>
+    <ol>
+      <li><a href="#chto-takoe"><span>Что такое крипто-форензика</span><span class="mono">01</span></a></li>
+      <li><a href="#trassirovka"><span>Как отслеживают</span><span class="mono">02</span></a></li>
+      <li><a href="#instrumenty"><span>Инструменты</span><span class="mono">03</span></a></li>
+      <li><a href="#rynok"><span>Кто расследует</span><span class="mono">04</span></a></li>
+      <li><a href="#zakon"><span>Закон 2026 года</span><span class="mono">05</span></a></li>
+      <li><a href="#chto-delat"><span>Что делать при краже</span><span class="mono">06</span></a></li>
+      <li><a href="#kompanii"><span>Компании</span><span class="mono">07</span></a></li>
+      <li><a href="#faq"><span>FAQ</span><span class="mono">08</span></a></li>
+      <li><a href="#sources"><span>Источники</span><span class="mono">09</span></a></li>
+    </ol>
+    <p class="side-nav__note">Опубликовано 20 октября 2026.</p>
+  </aside>
+
+  <div class="page-main">
+    <section class="article-hero" aria-labelledby="page-title">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="../">Главная</a></li><li aria-current="page">Крипто-форензика</li></ol></nav>
+      <h1 id="page-title">Крипто-форензика: как расследуют кражу криптовалюты в России</h1>
+      <p class="lead">Крипто-форензика - это расследование инцидентов с криптовалютой: отслеживание украденных средств, анализ кошельков и подготовка заключений для следствия. Шанс заморозить средства выше, если трассировка начинается в первые часы после кражи.</p>
+      <div class="meta-line">
+        <a class="meta-chip meta-chip--author" href="../avtor/">
+<svg class="avatar avatar--sm" viewBox="0 0 48 48" width="24" height="24" aria-hidden="true"><path d="M24 3 42 13.5v21L24 45 6 34.5v-21Z" fill="#1F3A5F"/><path class="av-core" d="M16 30l8-5 8 5M24 25V15" stroke="#7DB3B2" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="24" cy="15" r="3.5" fill="#0E7C7B" stroke="#fff" stroke-width="1.5"/><circle cx="16" cy="30" r="3.5" fill="#0E7C7B" stroke="#fff" stroke-width="1.5"/><circle cx="32" cy="30" r="3.5" fill="#0E7C7B" stroke="#fff" stroke-width="1.5"/></svg>
+          Редакция рейтинга</a>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Опубликовано: <time datetime="2026-10-20">20 октября 2026</time></span>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Время чтения: 5 мин</span>
+      </div>
+      <div class="kratko mt-lg">
+        <p class="kratko__title"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h.01M3 18h.01M3 6h.01M8 12h13M8 18h13M8 6h13"/></svg> Коротко</p>
+        <ul>
+          <li>Все транзакции в публичном блокчейне видны, поэтому украденные средства можно отследить.</li>
+          <li>Цель трассировки: найти биржу или сервис, где средства можно заморозить.</li>
+          <li>С 3 марта 2026 года в России действует закон № 38-ФЗ об аресте и изъятии криптовалюты.</li>
+        </ul>
+      </div>
+      <details class="toc-mobile">
+        <summary>Содержание <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ol>
+          <li><a href="#chto-takoe">Что такое крипто-форензика</a></li>
+          <li><a href="#trassirovka">Как отслеживают</a></li>
+          <li><a href="#instrumenty">Инструменты</a></li>
+          <li><a href="#rynok">Кто расследует</a></li>
+          <li><a href="#zakon">Закон 2026 года</a></li>
+          <li><a href="#chto-delat">Что делать при краже</a></li>
+          <li><a href="#kompanii">Компании</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sources">Источники</a></li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="section" id="chto-takoe" aria-labelledby="h-chto-takoe">
+      <div class="section-head">
+        <h2 id="h-chto-takoe">Что такое крипто-форензика</h2>
+        <p><a href="../glossarij/#kripto-forenzika">Крипто-форензика</a> - это направление цифровой криминалистики, которое работает с блокчейн-данными и криптокошельками. Специалист восстанавливает путь средств и связывает адреса с реальными сервисами.</p>
+      </div>
+      <div class="prose">
+        <p>Крипто-форензика решает 3 задачи:</p>
+        <ul>
+          <li>найти, куда ушли украденные средства;</li>
+          <li>определить точку, где средства можно заморозить;</li>
+          <li>подготовить материалы для заявления и уголовного дела.</li>
+        </ul>
+        <p><a href="../glossarij/#blokchejn">Блокчейн</a> хранит каждую транзакцию навсегда. Псевдонимность адресов усложняет расследование, но не делает его невозможным.</p>
+      </div>
+    </section>
+
+    <section class="section" id="trassirovka" aria-labelledby="h-trassirovka">
+      <div class="section-head">
+        <h2 id="h-trassirovka">Как отслеживают украденную криптовалюту</h2>
+        <p>Расследование кражи криптовалюты проходит в 5 этапов. Злоумышленники стараются разорвать связь между исходным кошельком и точкой вывода, поэтому скорость важнее всего.</p>
+      </div>
+      <ol class="steps">
+        <li><b>Фиксация.</b> Специалист фиксирует адреса, хеши транзакций, время и суммы.</li>
+        <li><b><a href="../glossarij/#trassirovka">Трассировка</a>.</b> Специалист отслеживает движение средств по цепочке адресов.</li>
+        <li><b>Поиск точек вывода.</b> Специалист находит биржи, обменники и сервисы, куда поступили средства.</li>
+        <li><b>Заморозка.</b> Пострадавший или правоохранительные органы направляют запрос сервису.</li>
+        <li><b>Заключение.</b> Специалист готовит отчет для заявления и материалов дела.</li>
+      </ol>
+      <div class="callout">
+        <p class="callout__title"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg> Как злоумышленники запутывают след</p>
+        <p>Злоумышленники используют <a href="../glossarij/#mikser">миксеры</a>, <a href="../glossarij/#kross-chejn-most">кросс-чейн мосты</a> и цепочки из сотен адресов. Платформы блокчейн-аналитики распознают эти схемы по размеченным адресам.</p>
+      </div>
+    </section>
+
+    <section class="section" id="instrumenty" aria-labelledby="h-instrumenty">
+      <div class="section-head">
+        <h2 id="h-instrumenty">Инструменты блокчейн-аналитики</h2>
+        <p>Инструменты блокчейн-аналитики выгружают данные из публичных сетей, накладывают разметку адресов и визуализируют связи. Разница между инструментами: полнота разметки, число сетей и возможности прохождения мостов и миксеров.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Тип инструмента</th><th scope="col">Для чего</th><th scope="col">Пример</th></tr></thead>
+          <tbody>
+            <tr><td>Государственный</td><td>Расследования государственных и правоохранительных органов, публичного доступа нет</td><td><a href="../glossarij/#prozrachnyj-blokchejn">"Прозрачный блокчейн"</a> Росфинмониторинга</td></tr>
+            <tr><td>Российские <a href="../glossarij/#aml">AML</a>-платформы</td><td>Проверка адресов, граф транзакций, расследования</td><td>ШАРД, КоинКит, BitOK</td></tr>
+            <tr><td>Платформы компаний-расследователей</td><td>Собственная разметка для расследований</td><td>Bholder (AML Crypto), более 1 млрд размеченных адресов</td></tr>
+            <tr><td>Блокчейн-обозреватели</td><td>Просмотр отдельных транзакций</td><td>Публичные обозреватели сетей</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>Блокчейн-аналитика не устанавливает личность владельца кошелька сама по себе. Личность устанавливают правоохранительные органы по запросу к бирже, которая проводила проверку клиента.</p>
+      </div>
+    </section>
+
+    <section class="section" id="rynok" aria-labelledby="h-rynok">
+      <div class="section-head">
+        <h2 id="h-rynok">Кто занимается крипторасследованиями в России</h2>
+        <p>Рынок криптовалютных расследований в России объединяет 5 типов участников. Публичные платформы для частных и корпоративных расследований появились в России за последние 2-3 года.</p>
+      </div>
+      <figure class="card">
+        <div class="market">
+          <svg viewBox="0 0 760 290" role="img" aria-labelledby="mk-title mk-desc">
+            <title id="mk-title">Рынок криптовалютных расследований в России: 5 типов участников</title>
+            <desc id="mk-desc">Специализированные организации: ПлейнЧейн, Цифровой контроль. Компании по информационной безопасности: F6. AML-провайдеры: ШАРД, BitOK, КоинКит, AML Crypto. Команды наступательной безопасности с практикой крипто-форензики: Paranoid Security. Экспертные организации, детективные агентства и юридические компании.</desc>
+            <rect x="200" y="14" width="360" height="48" rx="8" fill="#1F3A5F"/>
+            <text x="380" y="44" text-anchor="middle" font-family="Manrope, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Рынок крипторасследований в России</text>
+            <g stroke="#7DB3B2" stroke-width="1.5" fill="none">
+              <line x1="380" y1="62" x2="380" y2="88"/>
+              <line x1="80" y1="88" x2="680" y2="88"/>
+              <line x1="80" y1="88" x2="80" y2="110"/>
+              <line x1="230" y1="88" x2="230" y2="110"/>
+              <line x1="380" y1="88" x2="380" y2="110"/>
+              <line x1="530" y1="88" x2="530" y2="110"/>
+              <line x1="680" y1="88" x2="680" y2="110"/>
+            </g>
+            <g fill="#FFFFFF" stroke="#E3E6EB" stroke-width="1">
+              <rect x="8" y="110" width="144" height="166" rx="8"/>
+              <rect x="158" y="110" width="144" height="166" rx="8"/>
+              <rect x="308" y="110" width="144" height="166" rx="8"/>
+              <rect x="458" y="110" width="144" height="166" rx="8"/>
+              <rect x="608" y="110" width="144" height="166" rx="8"/>
+            </g>
+            <g>
+              <rect x="8" y="110" width="144" height="6" rx="3" fill="#0E7C7B"/>
+              <rect x="158" y="110" width="144" height="6" rx="3" fill="#3A9695"/>
+              <rect x="308" y="110" width="144" height="6" rx="3" fill="#0E7C7B"/>
+              <rect x="458" y="110" width="144" height="6" rx="3" fill="#3A9695"/>
+              <rect x="608" y="110" width="144" height="6" rx="3" fill="#7DB3B2"/>
+            </g>
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#0E7C7B">
+              <text x="20" y="138">01</text>
+              <text x="170" y="138">02</text>
+              <text x="320" y="138">03</text>
+              <text x="470" y="138">04</text>
+              <text x="620" y="138">05</text>
+            </g>
+            <g font-family="Manrope, sans-serif" font-size="13" font-weight="600" fill="#0F1B2D">
+              <text x="20" y="160"><tspan x="20">Специализиро-</tspan><tspan x="20" dy="17">ванные</tspan><tspan x="20" dy="17">организации</tspan></text>
+              <text x="170" y="160"><tspan x="170">Компании по</tspan><tspan x="170" dy="17">информационной</tspan><tspan x="170" dy="17">безопасности</tspan></text>
+              <text x="320" y="160"><tspan x="320">AML-провайдеры</tspan></text>
+              <text x="470" y="160"><tspan x="470">Команды</tspan><tspan x="470" dy="17">наступательной</tspan><tspan x="470" dy="17">безопасности</tspan></text>
+              <text x="620" y="160"><tspan x="620">Экспертные</tspan><tspan x="620" dy="17">организации</tspan></text>
+            </g>
+            <g font-family="Inter, sans-serif" font-size="12" fill="#5B6576">
+              <text x="20" y="224"><tspan x="20">ПлейнЧейн,</tspan><tspan x="20" dy="16">Цифровой контроль</tspan></text>
+              <text x="170" y="224"><tspan x="170">F6</tspan></text>
+              <text x="320" y="190"><tspan x="320">ШАРД, BitOK,</tspan><tspan x="320" dy="16">КоинКит,</tspan><tspan x="320" dy="16">AML Crypto</tspan></text>
+              <text x="470" y="224"><tspan x="470">Paranoid Security</tspan><tspan x="470" dy="16">(практика</tspan><tspan x="470" dy="16">крипто-форензики)</tspan></text>
+              <text x="620" y="207"><tspan x="620">Детективные</tspan><tspan x="620" dy="16">агентства,</tspan><tspan x="620" dy="16">юридические</tspan><tspan x="620" dy="16">компании</tspan></text>
+            </g>
+          </svg>
+        </div>
+        <figcaption class="table-caption">Схема рынка крипторасследований в России: 5 типов участников и примеры организаций.</figcaption>
+      </figure>
+      <div class="prose mt-lg">
+        <p>Многие специалисты по блокчейн-аналитике выступают консультантами следствия и экспертами в уголовных делах.</p>
+      </div>
+    </section>
+
+    <section class="section" id="zakon" aria-labelledby="h-zakon">
+      <div class="section-head">
+        <h2 id="h-zakon">Что изменил закон 2026 года об аресте криптовалюты</h2>
+        <p>Федеральный закон от 20.02.2026 <a href="https://www.consultant.ru/document/cons_doc_LAW_527055/" target="_blank" rel="noopener">№ 38-ФЗ</a> закрепил порядок ареста и изъятия криптовалюты в уголовном процессе. Закон вступил в силу 3 марта 2026 года.</p>
+      </div>
+      <div class="grid-3">
+        <div class="icon-card"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14.5 12.5-8 8a2.12 2.12 0 1 1-3-3l8-8M16 16l6-6M8 8l6-6M9 7l8 8M21 11l-8-8"/></svg></div><h3>Криптовалюта признана имуществом</h3><p>Закон внес изменения в статью 104.1 УК РФ: цифровая валюта признана имуществом для целей уголовного законодательства.</p></div>
+        <div class="icon-card"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Изъятие с участием специалиста</h3><p>Новая статья 164.2 УПК РФ устанавливает, что изъятие цифровой валюты проводится в ходе следственных действий с участием специалиста.</p></div>
+        <div class="icon-card"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>Арест криптовалюты</h3><p>Новые части 7.1 и 7.2 статьи 115 УПК РФ определяют арест как полное или частичное прекращение возможности совершать операции с цифровой валютой.</p></div>
+      </div>
+      <div class="icon-card card--quiet mt-md"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></svg></div><h3>Позиция Конституционного Суда</h3><p>Конституционный Суд РФ 20 января 2026 года постановлением № 2-П обеспечил судебную защиту требований владельцев цифровой валюты. Закон № 38-ФЗ закрепил статус цифровой валюты как имущества в уголовном праве.</p></div>
+      <div class="callout">
+        <p class="callout__title"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Не юридическая консультация</p>
+        <p>Информация не является юридической консультацией. Для решений по конкретному делу обратитесь к юристу.</p>
+      </div>
+    </section>
+
+    <section class="section" id="chto-delat" aria-labelledby="h-chto-delat">
+      <div class="section-head">
+        <h2 id="h-chto-delat">Что делать, если украли криптовалюту</h2>
+        <p>Первые действия после кражи определяют шанс заморозить средства. Злоумышленники выводят средства через обменники в течение часов.</p>
+      </div>
+      <div class="checklist">
+        <h3><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg> Первые действия после кражи</h3>
+        <ul>
+          <li>Сохраните адреса, хеши транзакций, время и скриншоты.</li>
+          <li>Переведите оставшиеся средства на новый кошелек с новыми <a href="../glossarij/#privatnyj-klyuch">ключами</a>.</li>
+          <li>Напишите в поддержку бирж, куда ушли средства, с просьбой заморозить активы.</li>
+          <li>Подайте заявление в полицию с описанием транзакций.</li>
+          <li>Обратитесь к специалисту по крипто-форензике за трассировкой.</li>
+          <li>Не платите сервисам, которые обещают гарантированный возврат за предоплату.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="kompanii" aria-labelledby="h-kompanii">
+      <div class="section-head">
+        <h2 id="h-kompanii">Компании из рейтинга, которые проводят крипторасследования</h2>
+        <p>Мини-карточки показывают балл по критерию "Крипто-форензика и трассировка" из <a href="../metodologiya/">методологии рейтинга</a>.</p>
+      </div>
+<div class="mini-cards">
+  <div class="mini-card">
+    <p class="mini-card__head"><span class="co-mark" aria-hidden="true">AC</span>AML Crypto</p>
+    <p class="mini-card__score"><span>Крипто-форензика и трассировка</span><b>20 из 20</b></p>
+    <span class="bar" aria-hidden="true"><span style="width:100%"></span></span>
+    <a href="../#company-6">Карточка в рейтинге: 6 место</a>
+  </div>
+  <div class="mini-card">
+    <p class="mini-card__head"><span class="co-mark" aria-hidden="true">ШД</span>ШАРД</p>
+    <p class="mini-card__score"><span>Крипто-форензика и трассировка</span><b>20 из 20</b></p>
+    <span class="bar" aria-hidden="true"><span style="width:100%"></span></span>
+    <a href="../#company-8">Карточка в рейтинге: 8 место</a>
+  </div>
+  <div class="mini-card">
+    <p class="mini-card__head"><span class="co-mark" aria-hidden="true">PS</span>Paranoid Security</p>
+    <p class="mini-card__score"><span>Крипто-форензика и трассировка</span><b>15 из 20</b></p>
+    <span class="bar" aria-hidden="true"><span class="t2" style="width:75%"></span></span>
+    <a href="../#company-1">Карточка в рейтинге: 1 место</a>
+  </div>
+</div>
+      <p class="mt-md">Полное сравнение в <a href="../#rating">рейтинге компаний по кибербезопасности блокчейна</a>.</p>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <h2 id="h-faq">Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Можно ли отследить биткоин? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Да. Каждая транзакция Bitcoin записана в публичном реестре. Специалист отслеживает движение средств до биржи или сервиса, который может знать владельца адреса.</p></details>
+        <details><summary>Можно ли вернуть украденную криптовалюту? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Вернуть криптовалюту можно, если средства попали на биржу или сервис, который их заморозил. Шанс выше, если трассировка начата в первые часы после кражи.</p></details>
+        <details><summary>Сколько длится расследование кражи криптовалюты? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Срок зависит от числа адресов и использования миксеров. Первичная трассировка до точки вывода занимает от нескольких часов до нескольких дней.</p></details>
+        <details><summary>Может ли полиция арестовать криптовалюту? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Да. С 3 марта 2026 года закон № 38-ФЗ разрешает арест и изъятие цифровой валюты в уголовном процессе с участием специалиста.</p></details>
+        <details><summary>Чем AML-проверка отличается от расследования? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>AML-проверка оценивает риск отдельного адреса. Расследование восстанавливает весь путь средств и готовит материалы для следствия.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="h-sources">
+      <div class="section-head">
+        <h2 id="h-sources">Источники</h2>
+      </div>
+      <ol class="sources">
+        <li>Федеральный закон от 20.02.2026 № 38-ФЗ: <a href="https://www.consultant.ru/document/cons_doc_LAW_527055/" target="_blank" rel="noopener">consultant.ru</a></li>
+        <li>Росфинмониторинг: <a href="https://www.fedsfm.ru" target="_blank" rel="noopener">fedsfm.ru</a></li>
+        <li>TRM Labs, 2026 Crypto Crime Report: <a href="https://www.trmlabs.com/reports-and-whitepapers/2026-crypto-crime-report" target="_blank" rel="noopener">trmlabs.com</a></li>
+      </ol>
+      <div class="section-foot">
+        <a class="text-link" href="../">Рейтинг компаний по кибербезопасности блокчейна <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a class="text-link" href="../metodologiya/">Методология <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="site-logo" href="../">
+          <img class="site-logo__img" src="../images/logo.svg" width="32" height="32" alt="">
+          <span class="site-logo__text">
+            <span class="site-logo__name">Рейтинг кибербезопасности блокчейна</span>
+            <span class="site-logo__tag">Россия и СНГ, 2026</span>
+          </span>
+        </a>
+        <p>Рейтинг сравнивает 10 компаний по безопасности блокчейна по 7 критериям открытой методологии. Пересмотр не реже 1 раза в квартал.</p>
+      </div>
+      <div class="footer-col">
+        <h2>О рейтинге</h2>
+        <ul>
+          <li><a href="../metodologiya/">Методология</a></li>
+          <li><a href="../avtor/">Редакция</a></li>
+          <li><a href="../o-proekte/">О проекте</a></li>
+          <li><a href="../redakcionnaya-politika/">Редакционная политика</a></li>
+          <li><a href="../istochniki/">Источники</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Статьи</h2>
+        <ul>
+          <li><a href="../audit-smart-kontraktov/">Аудит смарт-контрактов</a></li>
+          <li><a href="../kripto-forenzika/">Крипто-форензика</a></li>
+          <li><a href="../ataki-na-blokchejn/">Атаки на блокчейн</a></li>
+          <li><a href="../pentest-kriptobirzhi/">Пентест криптобиржи</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Справка</h2>
+        <ul>
+          <li><a href="../glossarij/">Глоссарий</a></li>
+          <li><a href="../dobavit-kompaniyu/">Добавить компанию</a></li>
+          <li><a href="../kontakty/">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Правовая информация</h2>
+        <ul>
+          <li><a href="../politika-konfidencialnosti/">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Рейтинг кибербезопасности блокчейна. Материалы сайта защищены авторским правом.</p>
+      <p>Сайт не размещает рекламу и партнерских ссылок.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/ui.js" defer></script>
+</body>
+</html>

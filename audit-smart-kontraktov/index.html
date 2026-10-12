@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Аудит смарт-контрактов: этапы, сроки и выбор аудитора</title>
+<meta name="description" content="Что проверяет аудит смарт-контрактов, какие уязвимости находит, как проходит и что должно быть в отчете. Чек-лист выбора аудитора.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/audit-smart-kontraktov/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Рейтинг компаний по кибербезопасности блокчейна">
+<meta property="og:title" content="Аудит смарт-контрактов: этапы, сроки и выбор аудитора">
+<meta property="og:description" content="Что проверяет аудит смарт-контрактов, какие уязвимости находит, как проходит и что должно быть в отчете. Чек-лист выбора аудитора.">
+<meta property="og:url" content="https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/audit-smart-kontraktov/">
+<meta property="og:image" content="https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/global.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization",
+      "name": "Редакция рейтинга кибербезопасности блокчейна",
+      "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "editor@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#website",
+      "name": "Рейтинг компаний по кибербезопасности блокчейна",
+      "url": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/",
+      "inLanguage": "ru",
+      "publisher": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Главная","item":"https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/"},
+{"@type":"ListItem","position":2,"name":"Аудит смарт-контрактов","item":"https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/audit-smart-kontraktov/"}
+]}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/audit-smart-kontraktov/#article",
+      "headline": "Аудит смарт-контрактов: что проверяют и как выбрать аудитора",
+      "description": "Что проверяет аудит смарт-контрактов, какие уязвимости находит, как проходит и что должно быть в отчете. Чек-лист выбора аудитора.",
+      "inLanguage": "ru",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/audit-smart-kontraktov/",
+      "image": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/images/og-image.png",
+      "author": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" },
+      "publisher": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/audit-smart-kontraktov/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Обязателен ли аудит смарт-контрактов?", "acceptedAnswer": { "@type": "Answer", "text": "Закон не требует аудит смарт-контрактов, но биржи, инвесторы и пользователи ожидают его перед запуском. Отчет аудита стал стандартом для проектов, которые привлекают средства." } },
+        { "@type": "Question", "name": "Можно ли заменить аудит автоматическим сканером?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Сканер находит типовые ошибки, но пропускает логические уязвимости. Логические ошибки находит только ручная проверка специалиста." } },
+        { "@type": "Question", "name": "Нужен ли повторный аудит после обновления контракта?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Любое изменение кода требует новой проверки, потому что исправление может создать новую уязвимость." } },
+        { "@type": "Question", "name": "Гарантирует ли аудит отсутствие взлома?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Аудит снижает риск в проверенной версии кода. Риски инфраструктуры, ключей и процессов закрывает пентест." } },
+        { "@type": "Question", "name": "Чем аудит смарт-контрактов отличается от пентеста?", "acceptedAnswer": { "@type": "Answer", "text": "Аудит проверяет код в блокчейне, пентест проверяет серверы, приложения и процессы компании. Бирже или кошельку нужны обе проверки." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header" role="banner">
+  <div class="container">
+    <a class="site-logo" href="../" aria-label="Рейтинг кибербезопасности блокчейна, на главную">
+      <img class="site-logo__img" src="../images/logo.svg" width="32" height="32" alt="">
+      <span class="site-logo__text">
+        <span class="site-logo__name">Рейтинг кибербезопасности блокчейна</span>
+        <span class="site-logo__tag">Россия и СНГ, 2026</span>
+      </span>
+    </a>
+    <input class="nav-toggle-input" type="checkbox" id="nav-toggle" aria-label="Открыть меню">
+    <label class="nav-toggle" for="nav-toggle" aria-hidden="true">
+      <svg class="icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </label>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <ul class="site-nav__list">
+        <li><a data-nav="home" href="../">Рейтинг</a></li>
+        <li><a data-nav="metodologiya" href="../metodologiya/">Методология</a></li>
+        <li>
+          <details class="nav-drop">
+            <summary data-nav="stati" aria-current="page">Статьи <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <ul class="nav-drop__menu">
+              <li><a data-nav="audit-smart-kontraktov" href="../audit-smart-kontraktov/">Аудит смарт-контрактов</a></li>
+              <li><a data-nav="kripto-forenzika" href="../kripto-forenzika/">Крипто-форензика</a></li>
+              <li><a data-nav="ataki-na-blokchejn" href="../ataki-na-blokchejn/">Атаки на блокчейн</a></li>
+              <li><a data-nav="pentest-kriptobirzhi" href="../pentest-kriptobirzhi/">Пентест криптобиржи</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a data-nav="glossarij" href="../glossarij/">Глоссарий</a></li>
+        <li class="nav-cta"><a data-nav="dobavit-kompaniyu" href="../dobavit-kompaniyu/">Добавить компанию</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="container page-grid">
+  <aside class="side-nav" aria-label="Разделы страницы">
+    <p class="side-nav__title">Содержание</p>
+    <ol>
+      <li><a href="#chto-takoe"><span>Что такое аудит</span><span class="mono">01</span></a></li>
+      <li><a href="#uyazvimosti"><span>Уязвимости</span><span class="mono">02</span></a></li>
+      <li><a href="#etapy"><span>Этапы аудита</span><span class="mono">03</span></a></li>
+      <li><a href="#otchet"><span>Отчет аудитора</span><span class="mono">04</span></a></li>
+      <li><a href="#sroki"><span>Сроки</span><span class="mono">05</span></a></li>
+      <li><a href="#vybor"><span>Выбор аудитора</span><span class="mono">06</span></a></li>
+      <li><a href="#kompanii"><span>Компании</span><span class="mono">07</span></a></li>
+      <li><a href="#faq"><span>FAQ</span><span class="mono">08</span></a></li>
+      <li><a href="#sources"><span>Источники</span><span class="mono">09</span></a></li>
+    </ol>
+    <p class="side-nav__note">Опубликовано 20 октября 2026.</p>
+  </aside>
+
+  <div class="page-main">
+    <section class="article-hero" aria-labelledby="page-title">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="../">Главная</a></li><li aria-current="page">Аудит смарт-контрактов</li></ol></nav>
+      <h1 id="page-title">Аудит смарт-контрактов: что проверяют и как выбрать аудитора</h1>
+      <p class="lead">Аудит смарт-контрактов - это ручная и автоматическая проверка кода контрактов до публикации в блокчейне. Аудит нужен, потому что опубликованный смарт-контракт нельзя исправить: ошибка в коде превращается в прямые потери средств.</p>
+      <div class="meta-line">
+        <a class="meta-chip meta-chip--author" href="../avtor/">
+<svg class="avatar avatar--sm" viewBox="0 0 48 48" width="24" height="24" aria-hidden="true"><path d="M24 3 42 13.5v21L24 45 6 34.5v-21Z" fill="#1F3A5F"/><path class="av-core" d="M16 30l8-5 8 5M24 25V15" stroke="#7DB3B2" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="24" cy="15" r="3.5" fill="#0E7C7B" stroke="#fff" stroke-width="1.5"/><circle cx="16" cy="30" r="3.5" fill="#0E7C7B" stroke="#fff" stroke-width="1.5"/><circle cx="32" cy="30" r="3.5" fill="#0E7C7B" stroke="#fff" stroke-width="1.5"/></svg>
+          Редакция рейтинга</a>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Опубликовано: <time datetime="2026-10-20">20 октября 2026</time></span>
+        <span class="meta-chip"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Время чтения: 5 мин</span>
+      </div>
+      <div class="kratko mt-lg">
+        <p class="kratko__title"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h.01M3 18h.01M3 6h.01M8 12h13M8 18h13M8 6h13"/></svg> Коротко</p>
+        <ul>
+          <li>Аудит проверяет код контрактов, архитектуру и бизнес-логику проекта.</li>
+          <li>Аудит не заменяет пентест: пентест проверяет серверы, приложения и процессы.</li>
+          <li>Хороший отчет содержит описание каждой уязвимости, оценку критичности и статус исправления.</li>
+        </ul>
+      </div>
+      <details class="toc-mobile">
+        <summary>Содержание <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ol>
+          <li><a href="#chto-takoe">Что такое аудит</a></li>
+          <li><a href="#uyazvimosti">Уязвимости</a></li>
+          <li><a href="#etapy">Этапы аудита</a></li>
+          <li><a href="#otchet">Отчет аудитора</a></li>
+          <li><a href="#sroki">Сроки</a></li>
+          <li><a href="#vybor">Выбор аудитора</a></li>
+          <li><a href="#kompanii">Компании</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sources">Источники</a></li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="section" id="chto-takoe" aria-labelledby="h-chto-takoe">
+      <div class="section-head">
+        <h2 id="h-chto-takoe">Что такое аудит смарт-контрактов</h2>
+        <p>Аудит смарт-контрактов - это проверка безопасности программ, которые выполняются в <a href="../glossarij/#blokchejn">блокчейне</a> автоматически. Аудитор ищет ошибки, которые позволяют вывести средства, заблокировать контракт или изменить его логику.</p>
+      </div>
+      <div class="prose">
+        <p><a href="../glossarij/#smart-kontrakt">Смарт-контракт</a> управляет деньгами напрямую. Ошибка в контракте DeFi-протокола дает злоумышленнику доступ ко всем средствам пользователей, которые заблокированы в контракте.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky mt-lg">
+        <table class="data-table">
+          <thead><tr><th scope="col">Параметр</th><th scope="col">Аудит смарт-контрактов</th><th scope="col"><a href="../glossarij/#pentest">Пентест</a></th></tr></thead>
+          <tbody>
+            <tr><td>Объект проверки</td><td>Код контрактов в блокчейне</td><td>Серверы, приложения, API, сеть, процессы</td></tr>
+            <tr><td>Метод</td><td>Анализ кода, тесты, формальная верификация</td><td>Моделирование атаки на работающую систему</td></tr>
+            <tr><td>Типичные находки</td><td>Повторный вызов, ошибки прав доступа, логические ошибки</td><td>Уязвимости веб-приложений, слабые пароли, ошибки настройки</td></tr>
+            <tr><td>Кому нужен</td><td>DeFi, токен-проекты, NFT-проекты</td><td>Биржи, кошельки, финтех</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>Блокчейн-проекту с собственной биржей или кошельком нужны обе проверки. Аудит закрывает риски кода, <a href="../pentest-kriptobirzhi/">пентест</a> закрывает риски инфраструктуры вокруг кода.</p>
+      </div>
+    </section>
+
+    <section class="section" id="uyazvimosti" aria-labelledby="h-uyazvimosti">
+      <div class="section-head">
+        <h2 id="h-uyazvimosti">Какие уязвимости находит аудит</h2>
+        <p>Аудит находит 5 основных групп уязвимостей смарт-контрактов. Каждая группа уже приводила к крупным кражам в DeFi.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Уязвимость</th><th scope="col">Как работает</th><th scope="col">Последствие</th></tr></thead>
+          <tbody>
+            <tr><td>Повторный вызов (reentrancy)</td><td>Контракт отправляет средства до обновления баланса, атакующий вызывает функцию повторно</td><td>Вывод средств сверх баланса</td></tr>
+            <tr><td>Ошибки прав доступа</td><td>Функция администратора доступна любому адресу</td><td>Перехват управления контрактом</td></tr>
+            <tr><td>Манипуляция оракулом</td><td>Атакующий меняет цену на источнике данных, от которого зависит контракт</td><td>Займы и обмены по ложной цене</td></tr>
+            <tr><td>Переполнение чисел</td><td>Арифметическая операция выходит за пределы типа данных</td><td>Неверные балансы</td></tr>
+            <tr><td>Логические ошибки</td><td>Код работает не так, как задумано в бизнес-логике</td><td>Потеря средств без технической "уязвимости"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>Логические ошибки находит только ручной анализ. Автоматические сканеры проверяют типовые шаблоны, но не понимают задумку проекта. Другие виды атак описаны в статье <a href="../ataki-na-blokchejn/">"Атаки на блокчейн"</a>.</p>
+      </div>
+      <div class="callout">
+        <p class="callout__title"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg> Ручная проверка логики</p>
+        <p>Аудиторы смарт-контрактов отмечают: полный аудит невозможен без опытных разработчиков, которые проверяют высокоуровневую логику контрактов, а не только типовые шаблоны атак.</p>
+      </div>
+    </section>
+
+    <section class="section" id="etapy" aria-labelledby="h-etapy">
+      <div class="section-head">
+        <h2 id="h-etapy">Как проходит аудит смарт-контрактов</h2>
+        <p>Аудит смарт-контрактов проходит в 6 этапов. Повторная проверка после исправлений входит в стандартный процесс.</p>
+      </div>
+      <ol class="steps">
+        <li>Проект передает аудитору код, документацию и описание бизнес-логики.</li>
+        <li>Аудитор запускает автоматический анализ кода и тесты.</li>
+        <li>Специалисты вручную проверяют каждый контракт и связи между ними.</li>
+        <li>Аудитор готовит предварительный отчет с найденными уязвимостями.</li>
+        <li>Команда проекта исправляет ошибки.</li>
+        <li>Аудитор проверяет исправления и выпускает итоговый отчет.</li>
+      </ol>
+      <div class="prose mt-lg">
+        <p>Ручная проверка занимает основную часть времени. Именно на этом этапе находят логические ошибки и сложные цепочки атак.</p>
+      </div>
+    </section>
+
+    <section class="section" id="otchet" aria-labelledby="h-otchet">
+      <div class="section-head">
+        <h2 id="h-otchet">Что должно быть в отчете аудитора</h2>
+        <p>Отчет аудитора показывает, что проверено, что найдено и что исправлено. Отчет без статуса исправлений не подтверждает безопасность контракта.</p>
+      </div>
+      <div class="prose">
+        <ul>
+          <li>Список проверенных контрактов и версия кода (хеш коммита).</li>
+          <li>Описание каждой уязвимости с примером атаки.</li>
+          <li>Оценка критичности: критическая, высокая, средняя, низкая.</li>
+          <li>Рекомендация по исправлению.</li>
+          <li>Статус исправления после повторной проверки.</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p class="callout__title"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M10 9H8M16 13H8M16 17H8"/></svg> Публичный отчет или закрытый</p>
+        <p>Публичный отчет повышает доверие инвесторов и пользователей. Проверьте, что версия кода в отчете совпадает с кодом, который опубликован в блокчейне.</p>
+      </div>
+    </section>
+
+    <section class="section" id="sroki" aria-labelledby="h-sroki">
+      <div class="section-head">
+        <h2 id="h-sroki">Сколько длится аудит и от чего зависит срок</h2>
+        <p>Срок аудита смарт-контрактов зависит от объема кода, числа контрактов и сложности логики. Простой токен-контракт проверяют быстрее, чем DeFi-протокол из десятков связанных контрактов.</p>
+      </div>
+      <div class="prose">
+        <ul>
+          <li>Объем кода в строках.</li>
+          <li>Число контрактов и внешних интеграций.</li>
+          <li>Наличие документации и тестов.</li>
+          <li>Число раундов исправлений.</li>
+        </ul>
+        <p>Точный срок аудитор называет после изучения кода. Закладывайте время на исправления и повторную проверку до даты запуска.</p>
+      </div>
+    </section>
+
+    <section class="section" id="vybor" aria-labelledby="h-vybor">
+      <div class="section-head">
+        <h2 id="h-vybor">Как выбрать аудитора смарт-контрактов</h2>
+        <p>Аудитора смарт-контрактов выбирают по публичным отчетам и глубине ручной проверки. Критерии, по которым редакция оценивает подрядчиков, описаны в <a href="../metodologiya/">методологии рейтинга</a>.</p>
+      </div>
+      <div class="checklist">
+        <h3><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg> Чек-лист выбора аудитора</h3>
+        <ul>
+          <li>Изучите публичные отчеты аудитора по похожим проектам.</li>
+          <li>Уточните, какая часть проверки выполняется вручную.</li>
+          <li>Узнайте, входит ли повторная проверка в стоимость.</li>
+          <li>Проверьте, работает ли аудитор с вашей сетью и языком контрактов.</li>
+          <li>Спросите, кто конкретно будет проверять код.</li>
+          <li>Убедитесь, что аудитор проверит и инфраструктуру проекта или порекомендует пентест.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="kompanii" aria-labelledby="h-kompanii">
+      <div class="section-head">
+        <h2 id="h-kompanii">Компании из рейтинга, которые проводят аудит смарт-контрактов</h2>
+        <p>Мини-карточки показывают балл по критерию "Аудит смарт-контрактов" из методологии рейтинга.</p>
+      </div>
+<div class="mini-cards">
+  <div class="mini-card">
+    <p class="mini-card__head"><span class="co-mark" aria-hidden="true">MB</span>MixBytes</p>
+    <p class="mini-card__score"><span>Аудит смарт-контрактов</span><b>15 из 15</b></p>
+    <span class="bar" aria-hidden="true"><span style="width:100%"></span></span>
+    <a href="../#company-7">Карточка в рейтинге: 7 место</a>
+  </div>
+  <div class="mini-card">
+    <p class="mini-card__head"><span class="co-mark" aria-hidden="true">PT</span>Positive Technologies</p>
+    <p class="mini-card__score"><span>Аудит смарт-контрактов</span><b>11,25 из 15</b></p>
+    <span class="bar" aria-hidden="true"><span class="t2" style="width:75%"></span></span>
+    <a href="../#company-2">Карточка в рейтинге: 2 место</a>
+  </div>
+  <div class="mini-card">
+    <p class="mini-card__head"><span class="co-mark" aria-hidden="true">ЛК</span>Лаборатория Касперского</p>
+    <p class="mini-card__score"><span>Аудит смарт-контрактов</span><b>7,5 из 15</b></p>
+    <span class="bar" aria-hidden="true"><span class="t3" style="width:50%"></span></span>
+    <a href="../#company-4">Карточка в рейтинге: 4 место</a>
+  </div>
+</div>
+      <p class="mt-md">Полное сравнение в <a href="../#rating">рейтинге компаний по кибербезопасности блокчейна</a>.</p>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <h2 id="h-faq">Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Обязателен ли аудит смарт-контрактов? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Закон не требует аудит смарт-контрактов, но биржи, инвесторы и пользователи ожидают его перед запуском. Отчет аудита стал стандартом для проектов, которые привлекают средства.</p></details>
+        <details><summary>Можно ли заменить аудит автоматическим сканером? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Нет. Сканер находит типовые ошибки, но пропускает логические уязвимости. Логические ошибки находит только ручная проверка специалиста.</p></details>
+        <details><summary>Нужен ли повторный аудит после обновления контракта? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Да. Любое изменение кода требует новой проверки, потому что исправление может создать новую уязвимость.</p></details>
+        <details><summary>Гарантирует ли аудит отсутствие взлома? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Нет. Аудит снижает риск в проверенной версии кода. Риски инфраструктуры, ключей и процессов закрывает пентест.</p></details>
+        <details><summary>Чем аудит смарт-контрактов отличается от пентеста? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Аудит проверяет код в блокчейне, пентест проверяет серверы, приложения и процессы компании. Бирже или кошельку нужны обе проверки.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="h-sources">
+      <div class="section-head">
+        <h2 id="h-sources">Источники</h2>
+      </div>
+      <ol class="sources">
+        <li>Документация Solidity, Security Considerations: <a href="https://docs.soliditylang.org/en/latest/security-considerations.html" target="_blank" rel="noopener">docs.soliditylang.org</a></li>
+        <li>Реестр уязвимостей <a href="../glossarij/#cve">CVE</a>: <a href="https://www.cve.org" target="_blank" rel="noopener">cve.org</a></li>
+      </ol>
+      <div class="section-foot">
+        <a class="text-link" href="../">Рейтинг компаний по кибербезопасности блокчейна <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a class="text-link" href="../metodologiya/">Методология <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="site-logo" href="../">
+          <img class="site-logo__img" src="../images/logo.svg" width="32" height="32" alt="">
+          <span class="site-logo__text">
+            <span class="site-logo__name">Рейтинг кибербезопасности блокчейна</span>
+            <span class="site-logo__tag">Россия и СНГ, 2026</span>
+          </span>
+        </a>
+        <p>Рейтинг сравнивает 10 компаний по безопасности блокчейна по 7 критериям открытой методологии. Пересмотр не реже 1 раза в квартал.</p>
+      </div>
+      <div class="footer-col">
+        <h2>О рейтинге</h2>
+        <ul>
+          <li><a href="../metodologiya/">Методология</a></li>
+          <li><a href="../avtor/">Редакция</a></li>
+          <li><a href="../o-proekte/">О проекте</a></li>
+          <li><a href="../redakcionnaya-politika/">Редакционная политика</a></li>
+          <li><a href="../istochniki/">Источники</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Статьи</h2>
+        <ul>
+          <li><a href="../audit-smart-kontraktov/">Аудит смарт-контрактов</a></li>
+          <li><a href="../kripto-forenzika/">Крипто-форензика</a></li>
+          <li><a href="../ataki-na-blokchejn/">Атаки на блокчейн</a></li>
+          <li><a href="../pentest-kriptobirzhi/">Пентест криптобиржи</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Справка</h2>
+        <ul>
+          <li><a href="../glossarij/">Глоссарий</a></li>
+          <li><a href="../dobavit-kompaniyu/">Добавить компанию</a></li>
+          <li><a href="../kontakty/">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Правовая информация</h2>
+        <ul>
+          <li><a href="../politika-konfidencialnosti/">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Рейтинг кибербезопасности блокчейна. Материалы сайта защищены авторским правом.</p>
+      <p>Сайт не размещает рекламу и партнерских ссылок.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/ui.js" defer></script>
+</body>
+</html>
