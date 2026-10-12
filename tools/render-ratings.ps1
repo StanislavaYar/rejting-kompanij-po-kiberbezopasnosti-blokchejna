@@ -53,7 +53,7 @@ $sb = New-Object Text.StringBuilder
 [void]$sb.AppendLine('    <tbody>')
 foreach ($c in $companies) {
   $first = if ($c.rank -eq 1) { ' class="is-first"' } else { '' }
-  [void]$sb.AppendLine("      <tr$first><td><span class=`"rank-num`">$($c.rank)</span></td><td><span class=`"co-name`"><span class=`"co-mark`" aria-hidden=`"true`">$(Enc $c.initials)</span>$(Enc $c.name)</span></td><td>$(Enc $c.type_table)</td><td>$(Enc $c.main_service)</td><td><div class=`"score`"><span class=`"score__val`">$(Num $c.total) <small>/ 100</small></span>$(Bar $c.total 100 ' bar--w')</div></td><td><a class=`"btn btn--secondary btn--sm`" href=`"#company-$($c.rank)`">Обзор<span class=`"visually-hidden`">: $(Enc $c.name)</span></a></td></tr>")
+  [void]$sb.AppendLine("      <tr$first><td><span class=`"rank-num`">$($c.rank)</span></td><td><span class=`"co-name`"><img class=`"co-logo`" src=`"{{ROOT}}images/logos/$($c.slug).png`" width=`"32`" height=`"32`" alt=`"`" loading=`"lazy`">$(Enc $c.name)</span></td><td>$(Enc $c.type_table)</td><td>$(Enc $c.main_service)</td><td><div class=`"score`"><span class=`"score__val`">$(Num $c.total) <small>/ 100</small></span>$(Bar $c.total 100 ' bar--w')</div></td><td><a class=`"btn btn--secondary btn--sm`" href=`"#company-$($c.rank)`">Обзор<span class=`"visually-hidden`">: $(Enc $c.name)</span></a></td></tr>")
 }
 [void]$sb.AppendLine('    </tbody>')
 [void]$sb.AppendLine('  </table>')
@@ -76,7 +76,7 @@ foreach ($c in $companies) {
   [void]$sb.AppendLine("<article class=`"company$first`" id=`"company-$n`" aria-labelledby=`"company-$n-name`">")
   [void]$sb.AppendLine('  <div class="company__head">')
   [void]$sb.AppendLine("    <span class=`"company__rank`" aria-label=`"Место $n`">#$n</span>")
-  [void]$sb.AppendLine("    <span class=`"co-mark co-mark--lg`" aria-hidden=`"true`">$(Enc $c.initials)</span>")
+  [void]$sb.AppendLine("    <img class=`"co-logo co-logo--lg`" src=`"{{ROOT}}images/logos/$($c.slug).png`" width=`"48`" height=`"48`" alt=`"`" loading=`"lazy`">")
   [void]$sb.AppendLine('    <div class="company__title">')
   [void]$sb.AppendLine("      <h3 id=`"company-$n-name`">$(Enc $c.name)</h3>")
   $tier = if ($n -eq 1) { ' <span class="badge badge--tier1">1 место по методологии</span>' } else { '' }
@@ -133,7 +133,7 @@ foreach ($key in $minis.Keys) {
   foreach ($c in $top) {
     $v = $c.scores.$code
     [void]$sb.AppendLine('  <div class="mini-card">')
-    [void]$sb.AppendLine("    <p class=`"mini-card__head`"><span class=`"co-mark`" aria-hidden=`"true`">$(Enc $c.initials)</span>$(Enc $c.name)</p>")
+    [void]$sb.AppendLine("    <p class=`"mini-card__head`"><img class=`"co-logo`" src=`"{{ROOT}}images/logos/$($c.slug).png`" width=`"32`" height=`"32`" alt=`"`" loading=`"lazy`">$(Enc $c.name)</p>")
     [void]$sb.AppendLine("    <p class=`"mini-card__score`"><span>$(Enc $crit.name)</span><b>$(Num $v) из $($crit.weight)</b></p>")
     [void]$sb.AppendLine("    $(Bar $v $crit.weight '')")
     [void]$sb.AppendLine("    <a href=`"{{ROOT}}#company-$($c.rank)`">Карточка в рейтинге: $($c.rank) место</a>")

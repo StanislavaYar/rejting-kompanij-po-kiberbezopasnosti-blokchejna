@@ -639,3 +639,8 @@ html { overflow-x: hidden; }
   .company__top .scorecard__total { padding-bottom: 6px; margin-bottom: 8px; }
   .company__top .scores { gap: 5px; }
 }
+/* Официальные иконки компаний вместо инициалов */
+.co-logo { flex: none; width: 32px; height: 32px; border-radius: var(--radius-control); border: 1px solid var(--color-border); background: #fff; object-fit: contain; }
+.co-logo--lg { width: 48px; height: 48px; border-radius: 10px; }
+.co-name, .mini-card__head { gap: 12px; }
+@media (max-width: 767px) { .company__head .co-logo--lg { display: none; } }
