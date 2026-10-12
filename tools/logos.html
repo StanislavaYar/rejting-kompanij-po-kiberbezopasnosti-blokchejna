@@ -2,7 +2,7 @@
 <script>
 // Иконки компаний -> PNG 96x96 (для показа 32 и 48 px на ретине).
 // Мелкие исходники (favicon 16 px) увеличиваются без сглаживания, чтобы не размывались.
-const L=[['paranoid-security','png'],['positive-technologies','png'],['f6','png'],['kaspersky','ico'],['bi-zone','png'],['aml-crypto','svg','aml-crypto-icon.svg'],['mixbytes','png'],['shard','png'],['bitok','png'],['koinkit','png']];
+const L=[['paranoid-security','png'],['positive-technologies','png'],['f6','png'],['kaspersky','png'],['bi-zone','png'],['aml-crypto','svg','aml-crypto-icon.svg'],['mixbytes','png'],['shard','png'],['bitok','png'],['koinkit','png']];
 const src=new URLSearchParams(location.search).get('src')||'../temporary screenshots/logos-src';
 Promise.all(L.map(([s,e,file])=>new Promise(res=>{const i=new Image();i.onload=()=>{const c=document.createElement('canvas');c.width=c.height=96;const x=c.getContext('2d');const small=i.naturalWidth<64;x.imageSmoothingEnabled=!small;x.imageSmoothingQuality='high';if(e==='svg'){x.fillStyle='#fff';x.fillRect(0,0,96,96);x.drawImage(i,12,12,72,72);}else{x.drawImage(i,0,0,96,96);}const p=document.createElement('pre');p.id='out-'+s;p.textContent=c.toDataURL('image/png');document.body.append(p);res()};i.onerror=()=>res();i.src=src+'/'+(file||s+'.'+e);}))).then(()=>document.title='done');
 </script>
