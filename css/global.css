@@ -659,3 +659,29 @@ html { overflow-x: hidden; }
 .js .to-top:not(.is-visible) { opacity: 0; transform: translateY(8px); pointer-events: none; }
 @media (min-width: 768px) { .to-top { right: 24px; bottom: 24px; width: 48px; height: 48px; } }
 @media (prefers-reduced-motion: reduce) { .to-top { transition: none; } }
+/* Мобильные таблицы: перенос текста в ячейках, широкие таблицы шире */
+@media (max-width: 767px) {
+  .table-wrap--sticky .data-table td, .table-wrap--sticky .data-table th { white-space: normal; overflow-wrap: break-word; }
+  .table-wrap--sticky .data-table .nowrap { white-space: normal; }
+  .table-wrap--sticky .data-table:has(th:nth-child(4)) { width: 780px; min-width: 780px; }
+}
+/* Мобильные: обычные (не прокручиваемые) таблицы компактнее, чтобы помещались в экран */
+@media (max-width: 767px) {
+  .table-wrap:not(.table-wrap--sticky) .data-table th, .table-wrap:not(.table-wrap--sticky) .data-table td { padding: 12px 10px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table th:first-child, .table-wrap:not(.table-wrap--sticky) .data-table td:first-child { padding-left: 14px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table th:last-child, .table-wrap:not(.table-wrap--sticky) .data-table td:last-child { padding-right: 14px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table th { white-space: normal; }
+}
+@media (max-width: 767px) {
+  .table-wrap:not(.table-wrap--sticky) .data-table td, .table-wrap:not(.table-wrap--sticky) .data-table th { hyphens: auto; -webkit-hyphens: auto; }
+}
+@media (max-width: 374px) {
+  .table-wrap:not(.table-wrap--sticky) .data-table { font-size: 13px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table th, .table-wrap:not(.table-wrap--sticky) .data-table td { padding: 10px 8px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table th:first-child, .table-wrap:not(.table-wrap--sticky) .data-table td:first-child { padding-left: 10px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table th:last-child, .table-wrap:not(.table-wrap--sticky) .data-table td:last-child { padding-right: 10px; }
+}
+@media (max-width: 374px) {
+  .weights.card { padding: 12px; }
+  .table-wrap:not(.table-wrap--sticky) .data-table td, .table-wrap:not(.table-wrap--sticky) .data-table th { overflow-wrap: anywhere; }
+}
