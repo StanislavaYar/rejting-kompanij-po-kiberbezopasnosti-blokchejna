@@ -20,4 +20,12 @@
     document.addEventListener('click', function (e) { if (drop.open && !drop.contains(e.target)) drop.open = false; });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && drop.open) { drop.open = false; drop.querySelector('summary').focus(); } });
   }
+  // Кнопка "Наверх": появляется после прокрутки (без JS видна всегда)
+  document.documentElement.classList.add('js');
+  var toTop = document.querySelector('.to-top');
+  if (toTop) {
+    var onScroll = function () { toTop.classList.toggle('is-visible', window.scrollY > 600); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 })();

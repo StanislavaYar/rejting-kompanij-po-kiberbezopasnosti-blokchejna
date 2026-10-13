@@ -644,3 +644,18 @@ html { overflow-x: hidden; }
 .co-logo--lg { width: 48px; height: 48px; border-radius: 10px; }
 .co-name, .mini-card__head { gap: 12px; }
 @media (max-width: 767px) { .company__head .co-logo--lg { display: none; } }
+/* Кнопка "Наверх" */
+.to-top {
+  position: fixed; right: 16px; bottom: 16px; z-index: 40;
+  display: grid; place-items: center; width: 44px; height: 44px;
+  border-radius: 50%; background: var(--color-surface); color: var(--color-primary);
+  border: 1px solid var(--color-border); box-shadow: var(--shadow-float);
+  transition: opacity .2s var(--ease), transform .2s var(--ease), border-color .15s var(--ease);
+}
+.to-top svg { width: 20px; height: 20px; }
+.to-top:hover { border-color: var(--color-primary); color: var(--color-primary-hover); transform: translateY(-2px); }
+.to-top:active { transform: translateY(0); }
+.to-top:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 50%; }
+.js .to-top:not(.is-visible) { opacity: 0; transform: translateY(8px); pointer-events: none; }
+@media (min-width: 768px) { .to-top { right: 24px; bottom: 24px; width: 48px; height: 48px; } }
+@media (prefers-reduced-motion: reduce) { .to-top { transition: none; } }
