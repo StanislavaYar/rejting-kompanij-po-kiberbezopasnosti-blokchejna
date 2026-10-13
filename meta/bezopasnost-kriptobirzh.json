@@ -1,0 +1,11 @@
+{
+  "slug": "bezopasnost-kriptobirzh",
+  "path": "bezopasnost-kriptobirzh/",
+  "depth": 1,
+  "nav": "stati",
+  "title": "Взлом криптобирж: как происходят атаки и как биржи защищаются",
+  "description": "Крупнейшие взломы криптобирж, как на самом деле крадут средства и какие меры защищают биржу: холодные кошельки, мультиподпись, Proof of Reserves, пентест.",
+  "robots": "noindex, nofollow",
+  "og_type": "article",
+  "breadcrumb": "Взлом криптобирж"
+}

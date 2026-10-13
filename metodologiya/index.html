@@ -61,16 +61,30 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Методология оценки компаний по кибербезопасности блокчейна",
-  "description": "Как оценивается рейтинг компаний по кибербезопасности блокчейна: 7 критериев, веса, шкала баллов, отбор компаний и пересмотр раз в квартал.",
-  "inLanguage": "ru",
-  "datePublished": "2026-10-20",
-  "dateModified": "2026-10-20",
-  "mainEntityOfPage": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/metodologiya/",
-  "image": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/images/og-image.png",
-  "author": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" },
-  "publisher": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" }
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Методология оценки компаний по кибербезопасности блокчейна",
+      "description": "Как оценивается рейтинг компаний по кибербезопасности блокчейна: 7 критериев, веса, шкала баллов, отбор компаний и пересмотр раз в квартал.",
+      "inLanguage": "ru",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/metodologiya/",
+      "image": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/images/og-image.png",
+      "author": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" },
+      "publisher": { "@id": "https://rejting-kompanij-po-kiberbezopasnosti-blokchejna.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Почему у компании 0 баллов по критерию?", "acceptedAnswer": { "@type": "Answer", "text": "Ноль баллов означает, что услуга не заявлена или не подтверждается публичными данными. Например, у MixBytes 0 баллов за крипто-форензику, потому что компания не заявляет расследование краж." } },
+        { "@type": "Question", "name": "Можно ли заплатить за место в рейтинге?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Место определяет только сумма баллов по 7 критериям. Сайт не размещает рекламу и партнерские ссылки на компании из рейтинга." } },
+        { "@type": "Question", "name": "Как часто меняются баллы?", "acceptedAnswer": { "@type": "Answer", "text": "Баллы пересматриваются не реже 1 раза в квартал. Балл меняется, если у компании появилась новая услуга, публикация или исследование с публичным подтверждением." } },
+        { "@type": "Question", "name": "Учитываются ли отзывы клиентов?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Методология учитывает только публичные и проверяемые данные, поэтому закрытые отзывы клиентов и проекты под NDA в оценку не входят." } },
+        { "@type": "Question", "name": "Как оспорить оценку?", "acceptedAnswer": { "@type": "Answer", "text": "Компания присылает публичные подтверждения на rating@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com. Редакция рассматривает данные при ближайшем квартальном пересмотре и меняет балл, если подтверждение соответствует шкале." } }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -100,9 +114,9 @@
             <summary data-nav="stati">Статьи <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
             <ul class="nav-drop__menu">
               <li><a data-nav="audit-smart-kontraktov" href="../audit-smart-kontraktov/">Аудит смарт-контрактов</a></li>
-              <li><a data-nav="kripto-forenzika" href="../kripto-forenzika/">Крипто-форензика</a></li>
+              <li><a data-nav="kak-vernut-ukradennuyu-kriptovalyutu" href="../kak-vernut-ukradennuyu-kriptovalyutu/">Как вернуть криптовалюту</a></li>
               <li><a data-nav="ataki-na-blokchejn" href="../ataki-na-blokchejn/">Атаки на блокчейн</a></li>
-              <li><a data-nav="pentest-kriptobirzhi" href="../pentest-kriptobirzhi/">Пентест криптобиржи</a></li>
+              <li><a data-nav="bezopasnost-kriptobirzh" href="../bezopasnost-kriptobirzh/">Взлом криптобирж</a></li>
             </ul>
           </details>
         </li>
@@ -118,10 +132,16 @@
     <p class="side-nav__title">Содержание</p>
     <ol>
       <li><a href="#weights"><span>Критерии и веса</span><span class="mono">01</span></a></li>
-      <li><a href="#scoring"><span>Как начисляются баллы</span><span class="mono">02</span></a></li>
-      <li><a href="#selection"><span>Отбор компаний</span><span class="mono">03</span></a></li>
-      <li><a href="#data"><span>Источники данных</span><span class="mono">04</span></a></li>
-      <li><a href="#updates"><span>Обновление рейтинга</span><span class="mono">05</span></a></li>
+      <li><a href="#why-weights"><span>Почему такие веса</span><span class="mono">02</span></a></li>
+      <li><a href="#scoring"><span>Как начисляются баллы</span><span class="mono">03</span></a></li>
+      <li><a href="#proof"><span>Что считается подтверждением</span><span class="mono">04</span></a></li>
+      <li><a href="#example"><span>Пример расчета</span><span class="mono">05</span></a></li>
+      <li><a href="#selection"><span>Отбор компаний</span><span class="mono">06</span></a></li>
+      <li><a href="#data"><span>Источники данных</span><span class="mono">07</span></a></li>
+      <li><a href="#disputes"><span>Спорные случаи</span><span class="mono">08</span></a></li>
+      <li><a href="#updates"><span>Обновление рейтинга</span><span class="mono">09</span></a></li>
+      <li><a href="#version"><span>Версия методологии</span><span class="mono">10</span></a></li>
+      <li><a href="#faq"><span>FAQ</span><span class="mono">11</span></a></li>
     </ol>
   </aside>
 
@@ -153,10 +173,16 @@
         <summary>Содержание <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
         <ol>
           <li><a href="#weights">Критерии и веса</a></li>
+          <li><a href="#why-weights">Почему такие веса</a></li>
           <li><a href="#scoring">Как начисляются баллы</a></li>
+          <li><a href="#proof">Что считается подтверждением</a></li>
+          <li><a href="#example">Пример расчета</a></li>
           <li><a href="#selection">Отбор компаний</a></li>
           <li><a href="#data">Источники данных</a></li>
+          <li><a href="#disputes">Спорные случаи</a></li>
           <li><a href="#updates">Обновление рейтинга</a></li>
+          <li><a href="#version">Версия методологии</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ol>
       </details>
     </section>
@@ -199,6 +225,30 @@
           </div>
         </div>
       </figure>
+    </section>
+
+    <section class="section" id="why-weights" aria-labelledby="h-why-weights">
+      <div class="section-head">
+        <h2 id="h-why-weights">Почему выбраны такие веса</h2>
+        <p>Веса отражают задачи, с которыми бизнес чаще всего приходит к подрядчику. Наступательная экспертиза и крипто-форензика получили по 20 баллов. Эти критерии закрывают две главные задачи: предотвратить взлом и отследить средства после кражи.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Критерий</th><th scope="col" class="num">Вес</th><th scope="col">Почему такой вес</th></tr></thead>
+          <tbody>
+            <tr><td>Наступательная экспертиза</td><td class="num">20</td><td>Проверка биржи, кошелька и инфраструктуры до атаки предотвращает взлом</td></tr>
+            <tr><td>Крипто-форензика и трассировка</td><td class="num">20</td><td>Отслеживание средств после кражи определяет шанс их заморозить</td></tr>
+            <tr><td>Публичные исследования и уязвимости</td><td class="num">15</td><td>Исследования показывают глубину экспертизы, которую читатель проверяет сам</td></tr>
+            <tr><td>Аудит смарт-контрактов</td><td class="num">15</td><td>Аудит нужен проектам с собственным кодом в блокчейне, но не всем клиентам рейтинга</td></tr>
+            <tr><td>Работа с правоохранительными органами и судом</td><td class="num">10</td><td>Опыт работы со следствием важен после кражи, но не при плановой проверке</td></tr>
+            <tr><td>Прозрачность результата</td><td class="num">10</td><td>Состав отчета и сроки помогают сравнить подрядчиков до договора</td></tr>
+            <tr><td>Доступность для бизнеса РФ и СНГ</td><td class="num">10</td><td>Возможность заключить договор - условие для клиента из региона</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>Аудит смарт-контрактов получил 15 баллов, а не 20. Биржам, банкам и финтех-компаниям чаще нужен пентест инфраструктуры, а аудит кода нужен DeFi-протоколам и токен-проектам.</p>
+      </div>
     </section>
 
     <section class="section" id="scoring" aria-labelledby="h-scoring">
@@ -279,6 +329,52 @@
       </div>
     </section>
 
+    <section class="section" id="proof" aria-labelledby="h-proof">
+      <div class="section-head">
+        <h2 id="h-proof">Что считается подтверждением</h2>
+        <p>Подтверждение - это публичный материал, который любой читатель может открыть и проверить. Заявление компании о себе без примеров и ссылок подтверждением не считается.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Критерий</th><th scope="col">Считается</th><th scope="col">Не считается</th></tr></thead>
+          <tbody>
+            <tr><td>Наступательная экспертиза</td><td>Описание методологии пентеста, опубликованные результаты исследований команды</td><td>Список услуг на сайте без описания работ</td></tr>
+            <tr><td>Крипто-форензика и трассировка</td><td>Собственная платформа блокчейн-аналитики, описанные кейсы расследований</td><td>Обещание вернуть средства без описания метода</td></tr>
+            <tr><td>Публичные исследования и уязвимости</td><td>Опубликованная запись в БДУ ФСТЭК или CVE, отчет о киберугрозах</td><td>Упоминание найденных уязвимостей без идентификаторов</td></tr>
+            <tr><td>Аудит смарт-контрактов</td><td>Публичный отчет аудита со списком проверенных контрактов</td><td>Логотипы клиентов без отчетов</td></tr>
+            <tr><td>Работа с правоохранительными органами и судом</td><td>Публикация СМИ об участии специалистов в делах</td><td>Заявление на сайте без источника</td></tr>
+            <tr><td>Прозрачность результата</td><td>Опубликованный состав отчета, сроки проекта, пример отчета</td><td>Фраза "подробный отчет" без описания содержания</td></tr>
+            <tr><td>Доступность для бизнеса РФ и СНГ</td><td>Русскоязычная команда, юрлицо в регионе, работа с клиентами из России</td><td>Контакты без условий договора для клиентов из региона</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="example" aria-labelledby="h-example">
+      <div class="section-head">
+        <h2 id="h-example">Пример расчета: MixBytes</h2>
+        <p>Пример расчета показывает, как публичные факты превращаются в баллы. Для примера выбрана MixBytes с 7 местом в рейтинге и итогом 51,25 балла из 100.</p>
+      </div>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Критерий и вес</th><th scope="col">Публичный факт</th><th scope="col">Уровень</th><th scope="col" class="num">Баллы</th></tr></thead>
+          <tbody>
+            <tr><td>Наступательная экспертиза, 20</td><td>Анализ архитектуры DeFi-протоколов и модели безопасности, пентест инфраструктуры не входит в услуги</td><td>Базовый, 50%</td><td class="num">10</td></tr>
+            <tr><td>Крипто-форензика и трассировка, 20</td><td>Услуга не заявлена</td><td>Нет данных, 0%</td><td class="num">0</td></tr>
+            <tr><td>Публичные исследования и уязвимости, 15</td><td>Опубликованные итоговые отчеты аудита с описанием найденных ошибок</td><td>Подтвержденный, 75%</td><td class="num">11,25</td></tr>
+            <tr><td>Аудит смарт-контрактов, 15</td><td>Аудит контрактов на Ethereum, повторный аудит, клиенты Aave, Yearn Finance, Curve и 1inch, публичные отчеты</td><td>Экспертный, 100%</td><td class="num">15</td></tr>
+            <tr><td>Работа с правоохранительными органами и судом, 10</td><td>Публичных данных нет</td><td>Нет данных, 0%</td><td class="num">0</td></tr>
+            <tr><td>Прозрачность результата, 10</td><td>Публичные отчеты аудита со статусом исправления ошибок</td><td>Экспертный, 100%</td><td class="num">10</td></tr>
+            <tr><td>Доступность для бизнеса РФ и СНГ, 10</td><td>Русскоязычная команда, условия работы с клиентами из России требуют уточнения</td><td>Базовый, 50%</td><td class="num">5</td></tr>
+            <tr><td>Итого</td><td></td><td></td><td class="num">51,25</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>Балл по критерию равен весу, умноженному на долю уровня: 15 x 75% = 11,25 балла. Итоговый балл компании - сумма баллов по 7 критериям. Все данные примера взяты из <a href="../#company-7">карточки MixBytes</a> в рейтинге.</p>
+      </div>
+    </section>
+
     <section class="section" id="selection" aria-labelledby="h-selection">
       <div class="section-head">
         <h2 id="h-selection">Как отбираются компании</h2>
@@ -290,6 +386,9 @@
         <li>Редакция оценивает компанию по 7 критериям и фиксирует источник каждого балла.</li>
         <li>В рейтинг входят 10 компаний с наибольшей суммой баллов.</li>
       </ol>
+      <div class="prose mt-lg">
+        <p>Компания, которая не вошла в топ-10, остается в рабочих материалах редакции. При следующем пересмотре редакция заново оценивает такую компанию по тем же критериям. Компания попадает в рейтинг, если ее сумма баллов выше, чем у компании на 10 месте.</p>
+      </div>
     </section>
 
     <section class="section" id="data" aria-labelledby="h-data">
@@ -297,7 +396,32 @@
         <h2 id="h-data">Источники данных</h2>
         <p>Редакция использует 4 типа источников: сайты компаний, базы уязвимостей (CVE, БДУ ФСТЭК), отчеты и исследования компаний, публикации отраслевых СМИ. Полный список приведен на странице "Источники".</p>
       </div>
-      <a class="text-link" href="../istochniki/">Источники и нормативная база <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <div class="table-wrap table-wrap--sticky">
+        <table class="data-table">
+          <thead><tr><th scope="col">Тип источника</th><th scope="col">Пример</th><th scope="col">Что подтверждает</th></tr></thead>
+          <tbody>
+            <tr><td>Сайт компании</td><td>Страницы услуг, описание методологии, примеры отчетов</td><td>Наличие услуги и прозрачность результата</td></tr>
+            <tr><td>Базы уязвимостей</td><td>CVE, Банк данных угроз ФСТЭК</td><td>Собственные исследования и найденные уязвимости</td></tr>
+            <tr><td>Отчеты и исследования компаний</td><td>Отчеты о киберугрозах, публичные отчеты аудита</td><td>Глубину экспертизы и опыт проектов</td></tr>
+            <tr><td>Отраслевые СМИ</td><td>Публикации о расследованиях и инцидентах</td><td>Участие специалистов в делах и публичные кейсы</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section-foot">
+        <a class="text-link" href="../istochniki/">Источники и нормативная база <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </section>
+
+    <section class="section" id="disputes" aria-labelledby="h-disputes">
+      <div class="section-head">
+        <h2 id="h-disputes">Спорные случаи</h2>
+        <p>Спорные случаи редакция решает по 3 правилам, которые одинаково применяются ко всем компаниям рейтинга.</p>
+      </div>
+      <div class="grid-3">
+        <div class="icon-card"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg></div><h3>Компания закрыла услугу</h3><p>Если компания официально закрыла услугу, балл по критерию снижается до уровня "Нет данных" при ближайшем пересмотре. Архивные материалы о закрытой услуге в оценку не входят.</p></div>
+        <div class="icon-card"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8M21 3v5h-5M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16M8 16H3v5"/></svg></div><h3>Данные противоречат друг другу</h3><p>Если два источника расходятся, редакция берет более свежий первоисточник. Выбранный источник фиксируется в рабочих материалах вместе с баллом.</p></div>
+        <div class="icon-card"><div class="icon-card__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1ZM2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1ZM7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div><h3>Одинаковый итоговый балл</h3><p>При равенстве итогового балла выше стоит компания с большей суммой по критериям с весом 20: наступательная экспертиза и крипто-форензика.</p></div>
+      </div>
     </section>
 
     <section class="section" id="updates" aria-labelledby="h-updates">
@@ -311,6 +435,37 @@
       </div>
       <div class="section-foot">
         <a class="btn btn--secondary" href="../#rating">К рейтингу компаний по кибербезопасности блокчейна <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </section>
+
+    <section class="section" id="version" aria-labelledby="h-version">
+      <div class="section-head">
+        <h2 id="h-version">Версия методологии</h2>
+        <p>Текущая версия методологии рейтинга - 1.0 от 20 октября 2026 года. Изменения методологии публикуются на этой странице.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th scope="col">Версия</th><th scope="col">Дата</th><th scope="col">Изменения</th></tr></thead>
+          <tbody>
+            <tr><td>1.0</td><td>20 октября 2026</td><td>Первая публикация: 7 критериев, шкала из 4 уровней, правила спорных случаев</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose mt-lg">
+        <p>Изменение весов, критериев или шкалы выходит новой версией методологии с датой и описанием изменений. Баллы всех компаний пересчитываются по новой версии при ближайшем квартальном пересмотре.</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <h2 id="h-faq">Частые вопросы о методологии</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Почему у компании 0 баллов по критерию? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Ноль баллов означает, что услуга не заявлена или не подтверждается публичными данными. Например, у MixBytes 0 баллов за крипто-форензику, потому что компания не заявляет расследование краж.</p></details>
+        <details><summary>Можно ли заплатить за место в рейтинге? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Нет. Место определяет только сумма баллов по 7 критериям. Сайт не размещает рекламу и партнерские ссылки на компании из рейтинга.</p></details>
+        <details><summary>Как часто меняются баллы? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Баллы пересматриваются не реже 1 раза в квартал. Балл меняется, если у компании появилась новая услуга, публикация или исследование с публичным подтверждением.</p></details>
+        <details><summary>Учитываются ли отзывы клиентов? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Нет. Методология учитывает только публичные и проверяемые данные, поэтому закрытые отзывы клиентов и проекты под NDA в оценку не входят.</p></details>
+        <details><summary>Как оспорить оценку? <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary><p>Компания присылает публичные подтверждения на rating@rejting-kompanij-po-kiberbezopasnosti-blokchejna.com. Редакция рассматривает данные при ближайшем квартальном пересмотре и меняет балл, если подтверждение соответствует шкале.</p></details>
       </div>
     </section>
   </div>
@@ -343,9 +498,9 @@
         <h2>Статьи</h2>
         <ul>
           <li><a href="../audit-smart-kontraktov/">Аудит смарт-контрактов</a></li>
-          <li><a href="../kripto-forenzika/">Крипто-форензика</a></li>
+          <li><a href="../kak-vernut-ukradennuyu-kriptovalyutu/">Как вернуть криптовалюту</a></li>
           <li><a href="../ataki-na-blokchejn/">Атаки на блокчейн</a></li>
-          <li><a href="../pentest-kriptobirzhi/">Пентест криптобиржи</a></li>
+          <li><a href="../bezopasnost-kriptobirzh/">Взлом криптобирж</a></li>
         </ul>
       </div>
       <div class="footer-col">
